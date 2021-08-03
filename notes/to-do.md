@@ -1,10 +1,10 @@
-# Inmplementation of a 8-bit CMOS Wallace tree Multiplier
-
-## TO-Do 
+# TO-Do 
 
 - [x] CMOS AND Gate
-- [ ] CMOS XOR Gate
-- [ ] CMOS 2-input Multiplexer
+- [x] CMOS XOR-XNOR Gate
+- [x] CMOS 2-input Multiplexer
+- [ ] Half Adder
+- [ ] Full Adder
 - [ ] 3:2 Compressor
 - [ ] 4:2 Compressor
 - [ ] 5:2 Compressor

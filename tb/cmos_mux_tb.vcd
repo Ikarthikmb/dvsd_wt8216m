@@ -1,0 +1,113 @@
+$date
+	Sun Aug  1 21:57:22 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cmos_mux_tb $end
+$var wire 1 ! y $end
+$var reg 1 " i0 $end
+$var reg 1 # i1 $end
+$var reg 1 $ s $end
+$var integer 32 % i [31:0] $end
+$scope module MUX $end
+$var wire 1 & GND $end
+$var wire 1 ' PWR $end
+$var wire 1 ( h $end
+$var wire 1 " i0 $end
+$var wire 1 # i1 $end
+$var wire 1 $ s $end
+$var wire 1 ) s_bar $end
+$var wire 1 * w1 $end
+$var wire 1 + w2 $end
+$var wire 1 , w3 $end
+$var wire 1 ! y $end
+$scope module INV1 $end
+$var wire 1 - GND $end
+$var wire 1 . PWR $end
+$var wire 1 $ in $end
+$var wire 1 ) out $end
+$upscope $end
+$scope module INV2 $end
+$var wire 1 / GND $end
+$var wire 1 0 PWR $end
+$var wire 1 ( in $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+10
+0/
+1.
+0-
+z,
+z+
+1*
+1)
+1(
+1'
+0&
+b0 %
+0$
+0#
+0"
+0!
+$end
+#5
+b1 %
+#10
+b10 %
+z*
+1!
+0(
+0+
+1"
+#15
+b11 %
+0,
+1#
+1*
+0!
+1(
+z+
+0"
+#20
+b100 %
+z*
+1!
+0(
+0+
+1"
+#25
+b101 %
+0)
+1$
+z,
+0#
+1*
+0!
+1(
+z+
+0"
+#30
+b110 %
+0+
+1"
+#35
+b111 %
+1!
+0(
+0,
+1#
+z+
+0"
+#40
+b1000 %
+0+
+1"

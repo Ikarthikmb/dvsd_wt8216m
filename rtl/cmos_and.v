@@ -14,15 +14,3 @@ module cmos_and(
   nmos(w2, GND, a2);
   cmos_inverter INV(w1,y);
 endmodule
-
-// CMOS 1-bit Inverter 
-module cmos_inverter(
-  input a,
-  output y 
-);
-  supply0 GND;
-  supply1 PWR;
-
-  pmos(y, PWR, a);
-  nmos(y, GND, a);
-endmodule
