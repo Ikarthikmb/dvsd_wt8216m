@@ -1,4 +1,5 @@
 `timescale 1ns/1ps
+
 `include "../rtl/dvsd_8216m1.v"
 `include "../rtl/cmos_and.v"
 `include "../rtl/compressor3to2.v"
@@ -34,18 +35,24 @@ module dvsd_8261m_tb();
     b7 = 0;
   end
 
+  integer ran1, ran2;
+
   initial begin
+    $dumpfile("dvsd_8261m_tb.vcd");
+    $dumpvars(0, dvsd_8261m_tb);
     for(i=0; i<10; i=i+1) begin
       #5;
-      {a0, a1, a2, a3, a4, a5, a6, a7} = $random % 256;
-      {b0, b1, b2, b3, b4, b5, b6, b7} = $random % 256;
+      ran1 = {$random} % 256;
+      {a0, a1, a2, a3, a4, a5, a6, a7} = ran1;
+      ran2 = {$random} % 256;
+      {b0, b1, b2, b3, b4, b5, b6, b7} = ran2;
     end
   end
 
   initial begin
-    $timeformat(-9,5," ns",9);
-    $display("time\t\ta\tb\tm");
-    $monitor("%0t",$realtime,"\t",a7,a6,a5,a4,a3,a2,a1,"\t",b7,b6,b5,b4,b3,b2,b1,"\t",m15,m14,m13,m12,m11,m10,m9,m8,m7,m6,m5,m4,m3,m2,m1);
+    $timeformat(-9,4," ns",9);
+    $display("time\t\ta\t\tb\t\tm");
+    $monitor("%0t",$realtime,"\t",a7,a6,a5,a4," ",a3,a2,a1,a0,"\t",b7,b6,b5,b4," ",b3,b2,b1,b0,"\t",m15,m14,m13,m12," ",m11,m10,m9,m8," ",m7,m6,m5,m4," ",m3,m2,m1,m0);
     #50 $finish;
   end
 

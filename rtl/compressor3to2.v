@@ -12,6 +12,8 @@ module compressor3to2(
   supply0 GND;
   supply1 PWR;
 
+  wire xo, xn;
+  
   cmos_xor_xnor XOR_XNOR(a0, a1, xo, xn);
   cmos_mux MUX(xo, xn, a2, sout);
   
