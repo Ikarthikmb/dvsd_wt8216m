@@ -1,13 +1,38 @@
-// `include "cmos_and.v"
-// `include "compressor3to2.v"
-// `include "cmos_halfadder.v"
-
+// =================================================================
+// 
+// 8-BIT DADDA MULTIPLIER
+// 
+// 
+// DESCRIPTION:
+// 
+// "dvsd_8216m1" is a 8 bit multiplier which uses Dadda-tree 
+// algorithm to multiply two 8-bit numbers to produce 16-bit number.
+// 
+// -----------------------------------------------------------------
+// input  A :                               a7 a6 a5 a4 a3 a2 a1 a0
+// input  B :                               b7 b6 b5 b4 b3 b2 b1 b0
+// ----------------------------------------------------------------- 
+// output M : m15 m14 m13 m12 m11 m10 m9 m8 m7 m6 m5 m4 m3 m2 m1 m0
+// ----------------------------------------------------------------- 
+//            ^MSB                                             LSB^
+// 
+// MODULES:
+// 
+// 1. dvsd_8216m1
+// 2. Half Adder
+// 3. 3:2 Compressor
+// 4. CMOS AND Gate
+// 5. CMOS XOR-XNOR Gate
+// 6. CMOS 2-input Multiplexer
+// 7. CMOS Inverter
+//
+// =================================================================
 
 module dvsd_8216m1(
-  input a0, a1, a2, a3, a4, a5, a6, a7,
-  input b0, b1, b2, b3, b4, b5, b6, b7,
-  output m0, m1, m2, m3, m4, m5, m6, m7,
-  output m8, m9, m10, m11, m12, m13, m14, m15
+  input   a0, a1, a2, a3, a4, a5, a6, a7,
+  input   b0, b1, b2, b3, b4, b5, b6, b7,
+  output  m0, m1, m2, m3, m4, m5, m6, m7,
+  output  m8, m9, m10, m11, m12, m13, m14, m15
 );
 
   wire w00,w10,w20,w30,w40,w50,w60,w70;
@@ -19,9 +44,9 @@ module dvsd_8216m1(
   wire w06,w16,w26,w36,w46,w56,w66,w76;
   wire w07,w17,w27,w37,w47,w57,w67,w77;
 
-  //
-  // Product Generation
-  //
+// ==============================================================
+// Product Generation
+// ==============================================================
 
   cmos_and AND0(a0, b0, w00);
   cmos_and AND1(a1, b0, w10);
@@ -95,9 +120,9 @@ module dvsd_8216m1(
   cmos_and AND62(a6, b7, w67);
   cmos_and AND63(a7, b7, w77);
   
-  //
-  // Stage 1D   
-  //
+//==============================================================
+// Stage 1D   
+//==============================================================
 
   wire us1,us2,us3,us4,us5,us6;
   wire uc1,uc2,uc3,uc4,uc5,uc6;
@@ -109,9 +134,9 @@ module dvsd_8216m1(
   compressor3to2 CMP2(w71,w62,w53,us5,uc5);
   compressor3to2 CMP3(w72,w63,w54,us6,uc6);
   
-  //
-  // Stage 2D  
-  //
+// ==============================================================
+// Stage 2D  
+// ==============================================================
 
   wire vs0,vs1,vs2,vs3,vs4,vs5,vs6,vs7,vs8,vs9,vs10,vs11,vs12,vs13;
   wire vc0,vc1,vc2,vc3,vc4,vc5,vc6,vc7,vc8,vc9,vc10,vc11,vc12,vc13; 
@@ -131,9 +156,9 @@ module dvsd_8216m1(
   compressor3to2 CMP14(w55,w46,w37,vs12,vc12);
   compressor3to2 CMP15(w74,w65,w56,vs13,vc13);
 
-  //
-  // Stage 3D  
-  //
+// ==============================================================
+// Stage 3D  
+// ==============================================================
 
   wire ts0,ts1,ts2,ts3,ts4,ts5,ts6,ts7,ts8,ts9;
   wire tc0,tc1,tc2,tc3,tc4,tc5,tc6,tc7,tc8,tc9; 
@@ -149,9 +174,9 @@ module dvsd_8216m1(
   compressor3to2 CMP23(vc11,vc12,vs13,ts8,tc8);
   compressor3to2 CMP24(vc13,w75,w66,ts9,tc9);
 
-  //
-  // Stage 3D  
-  //
+// ==============================================================
+// Stage 3D  
+// ==============================================================
 
   wire rs0,rs1,rs2,rs3,rs4,rs5,rs6,rs7,rs8,rs9,rs10,rs11;
   wire rc0,rc1,rc2,rc3,rc4,rc5,rc6,rc7,rc8,rc9,rc10,rc11; 
@@ -168,10 +193,10 @@ module dvsd_8216m1(
   compressor3to2 CMP33(tc7,ts8,w47,rs9,rc9);
   compressor3to2 CMP34(tc8,ts9,w57,rs10,rc10);
   compressor3to2 CMP35(tc9,w76,w67,rs11,rc11);
-
-  //
-  // Final Addition
-  //
+ 
+// ==============================================================
+// Final Addition
+// ==============================================================
 
   wire mc1,mc2,mc3,mc4,mc5,mc6,mc7,mc8,mc9,mc10,mc11,mc12,mc13,mc14;
   wire ms1,ms2,ms3,ms4,ms5,ms6,ms7,ms8,ms9,ms10,ms11,ms12,ms13,ms14;
@@ -191,7 +216,10 @@ module dvsd_8216m1(
   compressor3to2 CMP47(rc10,rs11,mc12,ms13,mc13);
   compressor3to2 CMP48(rc11,w77,mc13,ms14,mc14);
   
-  // Outputs
+// ==============================================================
+// Outputs
+// ==============================================================
+
   assign m0   = w00;
   assign m1   = ms1;
   assign m2   = ms2;
@@ -208,4 +236,162 @@ module dvsd_8216m1(
   assign m13  = ms12;
   assign m14  = ms13;
   assign m15  = mc14;
+endmodule
+
+// ==============================================================
+// 
+// Half Adder
+// 
+// ==============================================================
+
+module cmos_halfadder(
+  input a,
+  input b,
+  output sum,
+  output carry
+);
+  cmos_xor_xnor XOR_XNOR(a,b,sum,null);
+  cmos_and AND(a,b,carry);
+endmodule
+
+// ==============================================================
+// 
+// 3:2 Compressor
+// 
+// ==============================================================
+
+module compressor3to2(
+  input a0,
+  input a1,
+  input a2,
+  output sout,
+  output cout
+);
+  supply0 GND;
+  supply1 PWR;
+
+  wire xo, xn;
+  
+  cmos_xor_xnor XOR_XNOR(a0, a1, xo, xn);
+  cmos_mux MUX(xo, xn, a2, sout);
+  
+  // carry logic 
+  wire h, w1, w2, w3;
+
+  pmos(w1, PWR, a0);
+  pmos(w1, PWR, a1);
+  pmos(h, w1, a2);
+  pmos(h, w1, xo);
+  nmos(h, w2, a0);
+  nmos(w2, GND, a1);
+  nmos(h, w3, a2);
+  nmos(w3, GND, xo);
+
+  cmos_inverter INV(h, cout);
+
+endmodule
+
+// ==============================================================
+// 
+// CMOS AND Gate
+// 
+// ==============================================================
+
+module cmos_and(
+  input a1,
+  input a2,
+  output y
+);
+  supply0 GND;
+  supply1 PWR;
+  
+  wire w1, w2;
+
+  pmos(w1, PWR, a1);
+  pmos(w1, PWR, a2);
+  nmos(w1, w2, a1);
+  nmos(w2, GND, a2);
+  cmos_inverter INV(w1,y);
+endmodule
+
+// ==============================================================
+// 
+// CMOS 2-input Multiplexer
+// 
+// ==============================================================
+
+module cmos_mux(
+  input i0,
+  input i1,
+  input s,
+  output y 
+);
+  supply0 GND;
+  supply1 PWR;
+
+  wire s_bar;
+  wire h, w1, w2, w3;
+
+  cmos_inverter INV1(s, s_bar);
+  cmos_inverter INV2(h, y);
+
+  pmos(w1, PWR, s_bar);
+  pmos(w1, PWR, i0);
+  pmos(h, w1, s);
+  pmos(h, w1, i1);
+  nmos(h, w2, s_bar);
+  nmos(w2, GND, i0);
+  nmos(h, w3, s);
+  nmos(w3, GND, i1);
+endmodule
+
+// ==============================================================
+// 
+// CMOS XOR-XNOR Gate
+// 
+// ==============================================================
+
+module cmos_xor_xnor(
+  input a,
+  input b,
+  output xor_o,
+  output xnor_o
+);
+  supply0 GND;
+  supply1 PWR;
+  
+  wire a_bar, b_bar;
+  wire w1, w2;
+
+  cmos_inverter INV1(a, a_bar);
+  cmos_inverter INV2(b, b_bar);
+  cmos_inverter INV3(w2, xor_o);
+
+  pmos(w1, PWR, b);
+  pmos(w1, PWR, a_bar);
+  pmos(w2, w1, b_bar);
+  pmos(w2, w1, a);
+  nmos(w2, w3, b);
+  nmos(w3, GND, a_bar);
+  nmos(w2, w4, b_bar);
+  nmos(w4, GND, a);
+
+  assign xnor_o = w2;
+endmodule
+
+// ==============================================================
+// 
+// CMOS 1-bit Inverter 
+// 
+// ==============================================================
+
+module cmos_inverter(
+  input in,
+  output out 
+);
+  supply0 GND;
+  supply1 PWR;
+
+  pmos(out, PWR, in);
+  nmos(out, GND, in);
 endmodule

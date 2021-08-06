@@ -134,3 +134,42 @@ a2      a1      a0      sout    cout
 1       1       0       0       1
 1       1       1       1       1
 ```
+
+## 4-bit Kogge Stone Adder
+
+**Statement:**
+
+Port | Type | Description
+--- | --- | ---
+k3  | input | 1-bit input of "k"
+k2  | input | 1-bit input of "k"
+k1  | input | 1-bit input of "k"
+k0  | input | 1-bit input of "k"
+t3  | input | 1-bit input of "t"
+t2  | input | 1-bit input of "t"
+t1  | input | 1-bit input of "t"
+t0  | input | 1-bit input of "t"
+cin | input | 1-bit carry input"
+s4  | output | 1-bit output of "s", MSB bit
+s3  | output | 1-bit output of "s"
+s2  | output | 1-bit output of "s"
+s1  | output | 1-bit output of "s"
+s0  | output | 1-bit output of "s", LSB bit
+
+
+**Output File Report:** 
+
+```
+Time    a       b       s
+0       0000    0000    00000
+5       0010    0100    00110
+10      1000    0001    01001
+15      0000    1001    01001
+20      0110    0011    01001
+25      0000    1101    01101
+30      1000    1101    10101
+35      0110    0101    01011
+40      0001    0010    00011
+45      0000    0001    00001
+50      0000    1101    01101
+```

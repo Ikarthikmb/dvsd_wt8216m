@@ -12,7 +12,7 @@
 `include "cmos_xor.v"
 `include "cmos_inverter.v"
 
-module ksadd4b(
+module adderc4b(
 	input k0, k1, k2, k3,
 	input t0, t1, t2, t3,
 	output s0, s1, s2, s3, s4,
