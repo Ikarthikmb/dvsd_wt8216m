@@ -1,5 +1,10 @@
 # TO-Do 
 
+## 1. Chip Secification
+
+## 2. Design Entry/Functional Verification
+
+
 - [x] CMOS AND Gate
 - [x] CMOS XOR-XNOR Gate
 - [x] CMOS OR-NOR Gate
@@ -18,3 +23,40 @@
   - [ ] [Partial Addition] Stage 2
   - [ ] [Partial Addition] Stage 3
   - [ ] Final Addition
+
+## 3. RTL Synthesis
+
+1. Synthesis
+
+- [ ] Yosys
+- [ ] abc
+- [ ] OpenSTA
+- [ ] Fault
+
+2. Floorplan and PDN
+
+- [ ] Init_fp
+- [ ] Ioplacer
+- [ ] Tapcell
+- [ ] Placement
+- [ ] RePLace
+- [ ] Resizer
+- [ ] OpenPhySyn
+- [ ] OpenDP
+
+## 4. Partitioning of a Chip
+
+
+## 5. Design for Test(DFT) Insertion
+
+## 6. Floor Planning
+
+## 7. Placement Stage 
+
+## 8. Clock Tree Synthesis
+
+## 9. Routing Stage
+
+## 10. Final Verification
+
+## 11. GDS II
