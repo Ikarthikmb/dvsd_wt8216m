@@ -1,7 +1,4 @@
-# File Outputs 
-
----
-
+# Layout Design of a Modified 8-bit Dadda Multiplier using 3:2 Compressors
 
 ## Introduction
 
@@ -9,18 +6,6 @@ Process Design Kit (PDK) is the interface between the CAD designers and the foun
 
 [^1]: https://gitlab.com/gab13c/openlane-workshop#about-the-project
 
-## Template
-
-**Statement:**
-
-Port | Type | Description
---- | --- | ---
-
-**Equations:** 
-
-**Output File Report:** 
-
----
 
 ## CMOS AND Gate
 
@@ -142,38 +127,36 @@ a2      a1      a0      sout    cout
 1       1       1       1       1
 ```
 
-# Modified 8-bit Dadda Tree Multiplier Using 3:2 Compressors
+## 8-bit Dadda Multiplier
 
-**Output File**
+**Statement**: Dadda tree algorithm is similar to the Wallace tree reduction but consumes less gates.
 
-```
-time            a               b               m                       rout
-0.0000 ns       0000 0000       0000 0000       0000 0000 0000 0000     xxxx xxxx xxxx xxxx
-5.0000 ns       0010 0100       1000 0001       0010 0100 0010 0100     0001 0010 0010 0100
-15.0000 ns      1001 0000       1100 0110       0101 1110 1110 0000     0000 0011 0111 1011
-25.0000 ns      1011 0000       1011 0001       0111 0011 1100 0000     0000 0111 0010 1001
-35.0000 ns      1010 0110       0100 1000       0101 1101 0011 0000     0000 0111 0001 1010
-45.0000 ns      1000 0000       1011 0000       0011 0000 0001 0000     0000 0000 0000 1101
-```
+Port | Type 
+---	| ---
+A	| 16 bit Input
+B	| 16 bit Input
+M	| 16 bit Output
 
 # OpenLANE Flow
 
-## 1. RTL Synthesis
+## RTL Synthesis
 
-* **Yosys** - Performs RTL synthesis using GTech mapping
-* **abc** - Performs technology mappin to standard cells described in the PDK. We can adjust synthesis techniques using different integrated abc scripts to get desired results
-* **OpenSTA** - Performs static timing analysis on the resulting netlist to generate timing reports
-* **Fault** – Scan-chain insertion used for testing post fabrication. Supports ATPG and test patterns compaction 
+![DVSD_8216M3](../fig/dvsd_8216m3_blocky_seg1.png)
 
-## 2. Floorplan and PDN
+## STA
 
-  
-* **Init_fp** - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
-* **Ioplacer** - Places the macro input and output ports
-PDN - Generates the power distribution network
-* **Tapcell** - Inserts welltap and decap cells in the floorplan
-* **Placement** – Placement is done in two steps, one with global placement in which we place the designs across the chip, but they will not be legal placement with some standard cells overlapping each other, to fix this we perform a detailed placement which legalizes the design and ensures they fit in the standard cell rows
-* **RePLace** - Performs global placement
-* **Resizer** - Performs optional optimizations on the design
-* **OpenPhySyn** - Performs timing optimizations on the design
-* **OpenDP** - Perfroms detailed placement to legalize the globally placed components
+## DFT 
+
+## Floorplannng
+
+## Placement
+ 
+## CTS
+
+## Optimization
+
+# Resources
+
+OpenLANE: https://openlane-docs.readthedocs.io/en/rtd-develop/#installation-notes
+OpenROAD: https://vlsicad.ucsd.edu/Publications/Conferences/371/c371.pdf
+

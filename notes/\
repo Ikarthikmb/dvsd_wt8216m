@@ -19,24 +19,5 @@ flow.tcl -design dvsd_8216m9 -init_design_config
 ```
 
 ![preparation of the design](../fig/8216m9_lane1.png)
-
 ![configuration file](../fig/8216m9_lane1.png)
 
-To run the design with openlane
-
-```
-flow.tcl -design dvsd_8216m9
-```
-
-![Flow Completion Dialog](../fig/8216m9_lane3.png)
-
-Viewing the syntheiszed rtl code with yosys.
-
-```
-xdot tmp/synthesis/hierarchy.dot
-xdot tmp/synthesis/post_techmap.dot
-```
-
-![Hierarchy block](../fig/8216m9_lane5.png)
-
-![synthesized block](../fig/8216m9_lane4.png)

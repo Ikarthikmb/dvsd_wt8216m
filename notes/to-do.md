@@ -17,12 +17,12 @@
 - [ ] 4:2 Compressor
 - [ ] 5:2 Compressor
 - [ ] 16-bit adder(Kogge Stone adder)
-- [ ] 8-bit Wallace Tree Multiplier
+- [x] 8-bit Wallace Tree Multiplier
   - [x] Product generation
   - [x] [Partial Addition] Stage 1
-  - [ ] [Partial Addition] Stage 2
-  - [ ] [Partial Addition] Stage 3
-  - [ ] Final Addition
+  - [x] [Partial Addition] Stage 2
+  - [x] [Partial Addition] Stage 3
+  - [x] Final Addition
 
 ## 3. RTL Synthesis
 
