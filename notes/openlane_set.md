@@ -3,7 +3,11 @@
 ## Step 1: Clone OpenLane
 
 ```sh
+<<<<<<< HEAD
 git clone https://github.com/efabless/openlane
+=======
+git clone https://github.com/efabless/openlane.git openlane
+>>>>>>> 413d05ce4633dbedf3eba8414876694db7fe5521
 cd openlane 
 make openlane 
 make pdk
@@ -86,7 +90,26 @@ docker run -it efabless/openlane:latest
 Now lets test a design which is already present in `openlane/designs` type 
 
 ```sh
+<<<<<<< HEAD
 bash-4:$ flow.tcl -design spm -init_design_config 
 ```
 
 It shall take some time and the flow should go without errors. Now, you can load(or copy) your design into `openlane/design` folder and run using openlane workflow container. 
+=======
+bash-4:$ flow.tcl -design spm -interactive 
+```
+
+It shall take some time and the flow should go without errors. Now, you can load(or copy) your design into `openlane/design` folder and run using openlane workflow container. 
+
+For a new design you have to add a config file first which can be done by `-init_design_config` and continue with workflow
+
+```sh
+bash-4:$ flow.tcl -design my_design -src designs/my_design/design_name.v -init_design_config -interactive 
+```
+
+## References:
+
+* https://github.com/google/skywater-pdk
+* https://github.com/efabless/openlane
+* https://www.youtube.com/watch?v=d0hPdkYg5QI
+>>>>>>> 413d05ce4633dbedf3eba8414876694db7fe5521
