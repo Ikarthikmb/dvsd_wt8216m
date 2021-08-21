@@ -15,14 +15,14 @@
     - [2.2. Synthesis](#22-synthesis)
     - [2.3. Floor Planning](#23-floor-planning)
     - [2.4. Placement](#24-placement)
-  - [3. References:](#3-references)
-  - [4. Acknowledgements:](#4-acknowledgements)
+  - [References:](#references)
+  - [Acknowledgements:](#acknowledgements)
 
 <!-- /code_chunk_output -->
 
 ---
 
-The binary multiplier uses two 8-bit inputs(A and B) to produce 16-bit output. You can use the make file commads to reproduce this project. To check available commads run `make help`.
+The binary multiplier uses two 8-bit inputs(A and B) to produce 16-bit output. You can use the make file commads to reproduce this project. To check available commads run `make help` inside `sim` directory.
 
 ## 1. Verification of the Muliplier 
 
@@ -59,7 +59,7 @@ flow.tcl -design dvsd_8216m9 -init_design_config
 
 ![preparation of the design](fig/8216m9_lane1.png)
 
-![configuration file](fig/8216m9_lane1.png)
+![configuration file](fig/8216m9_lane2.png)
 
 To run the design with openlane
 
@@ -118,14 +118,14 @@ Converting to spice
 
 
 
-## 3. References:
+## References:
 
-* [efabless openlane](https://github.com/efabless/openlane)
+* https://github.com/efabless/openlane
 * [The-OpenROAD-Project](https://github.com/The-OpenROAD-Project/)
 * [openlane-workshop](https://gitlab.com/gab13c/openlane-workshop#about-the-project)
 * [Magic VLSI](http://opencircuitdesign.com/magic/)
 
 
-## 4. Acknowledgements:
+## Acknowledgements:
 
-* [Kunal Ghosh](https://github.com/kunalg123)
+* [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
