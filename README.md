@@ -120,10 +120,10 @@ Converting to spice
 
 ## References:
 
-* https://github.com/efabless/openlane
-* [The-OpenROAD-Project](https://github.com/The-OpenROAD-Project/)
-* [openlane-workshop](https://gitlab.com/gab13c/openlane-workshop#about-the-project)
-* [Magic VLSI](http://opencircuitdesign.com/magic/)
+* openlane: https://github.com/efabless/openlane
+* The-OpenROAD-Project: https://github.com/The-OpenROAD-Project/)
+* openlane-workshop: https://gitlab.com/gab13c/openlane-workshop#about-the-project)
+* Magic VLSI: http://opencircuitdesign.com/magic/)
 
 
 ## Acknowledgements:
