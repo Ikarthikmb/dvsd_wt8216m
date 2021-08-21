@@ -1,7 +1,15 @@
 
 # 8 bit binary Multiplier using sky130 PDK with OpenLane
 
+The binary multiplier uses two 8-bit inputs(A and B) to produce 16-bit output. You can use the make file commads to reproduce this project. To check available commads run `make help`.
+
 ## Verification of the Muliplier 
+
+To verify the rtl code
+
+```
+make test9
+```
 
 ```
 time	| A			| B			| M				 
