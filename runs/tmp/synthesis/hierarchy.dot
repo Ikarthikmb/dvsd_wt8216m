@@ -1,0 +1,14 @@
+digraph "dvsd_8216m9" {
+label="dvsd_8216m9";
+rankdir="LR";
+remincross=true;
+n2 [ shape=octagon, label="M", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="B", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="A", color="black", fontcolor="black" ];
+c6 [ shape=record, label="{{<p4> A|<p3> B}|$1\n$mul|{<p5> Y}}" ];
+x0 [shape=box, style=rounded, label="BUF"];
+c6:p5:e -> x0:w:w [color="black", style="setlinewidth(3)", label=""];
+x0:e:e -> n2:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> c6:p3:w [color="black", style="setlinewidth(3)", label=""];
+n4:e -> c6:p4:w [color="black", style="setlinewidth(3)", label=""];
+}

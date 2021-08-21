@@ -1,0 +1,110 @@
+magic
+tech sky130A
+timestamp 1629489480
+<< nwell >>
+rect -19 131 571 291
+<< pwell >>
+rect 15 -9 32 9
+<< obsli1 >>
+rect 0 264 15 281
+rect 32 264 61 281
+rect 78 264 107 281
+rect 124 264 153 281
+rect 170 264 199 281
+rect 216 264 245 281
+rect 262 264 291 281
+rect 308 264 337 281
+rect 354 264 383 281
+rect 400 264 429 281
+rect 446 264 475 281
+rect 492 264 521 281
+rect 538 264 552 281
+rect 9 155 543 264
+rect 9 86 267 138
+rect 284 103 543 155
+rect 9 9 543 86
+rect 0 -9 15 9
+rect 32 -9 61 9
+rect 78 -9 107 9
+rect 124 -9 153 9
+rect 170 -9 199 9
+rect 216 -9 245 9
+rect 262 -9 291 9
+rect 308 -9 337 9
+rect 354 -9 383 9
+rect 400 -9 429 9
+rect 446 -9 475 9
+rect 492 -9 521 9
+rect 538 -9 552 9
+<< obsli1c >>
+rect 15 264 32 281
+rect 61 264 78 281
+rect 107 264 124 281
+rect 153 264 170 281
+rect 199 264 216 281
+rect 245 264 262 281
+rect 291 264 308 281
+rect 337 264 354 281
+rect 383 264 400 281
+rect 429 264 446 281
+rect 475 264 492 281
+rect 521 264 538 281
+rect 15 -9 32 9
+rect 61 -9 78 9
+rect 107 -9 124 9
+rect 153 -9 170 9
+rect 199 -9 216 9
+rect 245 -9 262 9
+rect 291 -9 308 9
+rect 337 -9 354 9
+rect 383 -9 400 9
+rect 429 -9 446 9
+rect 475 -9 492 9
+rect 521 -9 538 9
+<< metal1 >>
+rect 0 281 552 296
+rect 0 264 15 281
+rect 32 264 61 281
+rect 78 264 107 281
+rect 124 264 153 281
+rect 170 264 199 281
+rect 216 264 245 281
+rect 262 264 291 281
+rect 308 264 337 281
+rect 354 264 383 281
+rect 400 264 429 281
+rect 446 264 475 281
+rect 492 264 521 281
+rect 538 264 552 281
+rect 0 248 552 264
+rect 0 9 552 24
+rect 0 -9 15 9
+rect 32 -9 61 9
+rect 78 -9 107 9
+rect 124 -9 153 9
+rect 170 -9 199 9
+rect 216 -9 245 9
+rect 262 -9 291 9
+rect 308 -9 337 9
+rect 354 -9 383 9
+rect 400 -9 429 9
+rect 446 -9 475 9
+rect 492 -9 521 9
+rect 538 -9 552 9
+rect 0 -24 552 -9
+<< labels >>
+rlabel metal1 s 0 -24 552 24 8 VGND
+port 1 nsew ground bidirectional abutment
+rlabel pwell s 15 -9 32 9 8 VNB
+port 2 nsew ground bidirectional
+rlabel nwell s -19 131 571 291 6 VPB
+port 3 nsew power bidirectional
+rlabel metal1 s 0 248 552 296 6 VPWR
+port 4 nsew power bidirectional abutment
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string FIXED_BBOX 0 0 552 272
+string LEFsymmetry X Y R90
+string LEFview TRUE
+<< end >>
