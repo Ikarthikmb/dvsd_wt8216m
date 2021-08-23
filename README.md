@@ -16,6 +16,7 @@
     - [Placement](#placement)
     - [Final GDS](#final-gds)
   - [Acknowledgements:](#acknowledgements)
+  - [References:](#references)
 
 <!-- /code_chunk_output -->
 
@@ -239,3 +240,16 @@ run_placement
 ## Acknowledgements:
 
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
+
+## References:
+
+**Research Papers**
+
+- [ ] Jorge Tonfat, Ricardo Reis, South Symposium on Microelectronics, Low Power 3-2 and 4-2 Adder Compressors Implemented Using ASTRAN.
+- [ ] Lavanya. M, Ranjan K. Senapati, JVR Ravindra, International Journal of Engineering Research and Technology, Low-Power Near-Explicit 5:2 Compressor for Superior Performance Multipliers
+
+**Websites**
+
+* Advanced OpenLANE Workshop: https://gitlab.com/gab13c/openlane-workshop#about-the-project
+* OpenLANE: https://github.com/efabless/openlane
+* Dada multiplier wiki: https://en.wikipedia.org/wiki/Dadda_multiplier
