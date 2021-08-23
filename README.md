@@ -14,6 +14,7 @@
     - [Synthesis](#synthesis)
     - [Floor Planning](#floor-planning)
     - [Placement](#placement)
+    - [Final GDS](#final-gds)
   - [Acknowledgements:](#acknowledgements)
 
 <!-- /code_chunk_output -->
@@ -22,13 +23,10 @@
 
 Dadda multiplier is a type of binary multiplier. Unlike Wallace multiplier, Dadda multiplier uses less munber of
 gates for the reduction technique. A conventional Dadda multiplier uses a selection of half and full adders to sum
- the partial product in stages(Dadda reduction)[^1]. A modified Dadda multiplier uses 3:2 compressors to further reduce the 
+ the partial product in stages([Dadda reduction](https://en.wikipedia.org/wiki/Dadda_multiplier)). A modified Dadda multiplier uses 3:2 compressors to further reduce the 
 speed and improve the efficiency of the design. The multiplier design uses two 8-bit inputs(A and B) to produce
 a 16-bit output.
 
-[^1]: [Dadda multiplier wiki](https://en.wikipedia.org/wiki/Dadda_multiplier?oldformat=true)
-
-<!-- You can use the make file commads to reproduce this project. To check available commads run `make help` inside `sim` directory. -->
 
 **Directory Structure:**
 
@@ -139,15 +137,12 @@ SPEF-Extractor - Performs SPEF extraction that include parasitic information
 * Magic - Performs DRC Checks & Antenna Checks
 * Netgen - Performs LVS Checks 
 
-For complete information regarding the openlane flow visit [Advanced OpenLANE Workshop](https://gitlab.com/gab13c/openlane-workshop#about-the-project)[^2].
-
-[^2]: [Advanced OpenLANE Workshop](https://gitlab.com/gab13c/openlane-workshop#about-the-project)
+For complete information regarding the openlane flow visit [Advanced OpenLANE Workshop](https://gitlab.com/gab13c/openlane-workshop#about-the-project)
 
 ### Preparation 
 
-I shall be working with docker to load the OpenLane Flow image, to setup and install openlance with docker refer [Setting up OpenLANE[^*]](https://github.com/efabless/openlane). 
+I shall be working with docker to load the OpenLane Flow image, to setup and install openlance with docker refer [Setting up OpenLANE](https://github.com/efabless/openlane). 
 
-[^*]: [Setting up OpenLANE](https://github.com/efabless/openlane)
 
 To begin with add the project to the `designs/src` folder. Now lets try to open the design with openlane. Use `make mount` to start the openlane image through docker.
 
@@ -234,6 +229,11 @@ run_placement
 ![Placement def file magic view](fig/12-placement_def.png)
 
 ![single cell from Placement def file](fig/12-placement_def_box.png)
+
+### Final GDS
+
+![GDS file with klayout viewer](fig/14-final_gds.png)
+![GDS file with klayout viewer](fig/14-final_gds_zoomed.png)
 
 
 ## Acknowledgements:
