@@ -1,0 +1,19 @@
+Design Name: dvsd_8216m3
+Run Directory: /openLANE_flow/designs/dvsd_8216m3/runs/final_run
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/reports/magic//32-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/results/lvs/dvsd_8216m3.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/reports/routing//34-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

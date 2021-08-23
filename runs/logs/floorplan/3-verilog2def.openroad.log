@@ -1,16 +1,16 @@
 OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/merged_unpadded.lef
 [WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
 The LEF parser will ignore this statement.
-To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef at line 68238.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/merged_unpadded.lef at line 68238.
 
 [INFO ODB-0223]     Created 13 technology layers
 [INFO ODB-0224]     Created 25 technology vias
 [INFO ODB-0225]     Created 441 library cells
-[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/merged_unpadded.lef
 [INFO IFP-0001] Added 26 rows of 159 sites.
 [INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
-[INFO] Floorplanned on a die area of 0.0 0.0 84.355 95.075 (microns). Saving to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/reports/floorplan/3-verilog2def.die_area.rpt.
-[INFO] Floorplanned on a core area of 5.52 10.88 78.66 81.6 (microns). Saving to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/reports/floorplan/3-verilog2def.core_area.rpt.
+[INFO] Floorplanned on a die area of 0.0 0.0 84.355 95.075 (microns). Saving to /openLANE_flow/designs/dvsd_8216m3/runs/final_run/reports/floorplan/3-verilog2def.die_area.rpt.
+[INFO] Floorplanned on a core area of 5.52 10.88 78.66 81.6 (microns). Saving to /openLANE_flow/designs/dvsd_8216m3/runs/final_run/reports/floorplan/3-verilog2def.core_area.rpt.

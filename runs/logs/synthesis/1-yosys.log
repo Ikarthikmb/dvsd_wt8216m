@@ -36,7 +36,7 @@ Generating RTLIL representation for module `\and1b'.
 Successfully finished Verilog frontend.
 
 2. Generating Graphviz representation of design.
-Writing dot description to `/openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/synthesis/hierarchy.dot'.
+Writing dot description to `/openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/synthesis/hierarchy.dot'.
 Dumping module dvsd_8216m3 to page 1.
 
 3. Executing HIERARCHY pass (managing design hierarchy).
@@ -608,7 +608,7 @@ Checking module dvsd_8216m3...
 Found and reported 0 problems.
 
 6. Generating Graphviz representation of design.
-Writing dot description to `/openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/synthesis/post_techmap.dot'.
+Writing dot description to `/openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/synthesis/post_techmap.dot'.
 Dumping module dvsd_8216m3 to page 1.
 
 7. Executing SHARE pass (SAT-based resource sharing).
@@ -790,15 +790,15 @@ Mapping DFF cells in module `\dvsd_8216m3':
 
 22. Executing ABC pass (technology mapping using ABC).
 
-22.1. Extracting gate netlist of module `\dvsd_8216m3' to `/tmp/yosys-abc-oITMem/input.blif'..
+22.1. Extracting gate netlist of module `\dvsd_8216m3' to `/tmp/yosys-abc-7cYMxV/input.blif'..
 Extracted 324 gates and 340 wires to a netlist network with 16 inputs and 16 outputs.
 
 22.1.1. Executing ABC.
-Running ABC command: /build/bin/yosys-abc -s -f /tmp/yosys-abc-oITMem/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-oITMem/abc.script".
+Running ABC command: /build/bin/yosys-abc -s -f /tmp/yosys-abc-7cYMxV/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-7cYMxV/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-oITMem/input.blif 
-ABC: + read_lib -w /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/trimmed.lib 
+ABC: + read_blif /tmp/yosys-abc-7cYMxV/input.blif 
+ABC: + read_lib -w /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.14 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
@@ -817,13 +817,13 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
-ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.20 sec
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.20 sec
 ABC: Memory =    7.77 MB. Time =     0.20 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
-ABC: + read_constr -v /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/synthesis/yosys.sdc 
+ABC: + read_constr -v /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/synthesis/yosys.sdc 
 ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
 ABC: Setting output load to be 17.650000.
-ABC: + read_constr /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/synthesis/yosys.sdc 
+ABC: + read_constr /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/synthesis/yosys.sdc 
 ABC: + fx 
 ABC: + mfs 
 ABC: + strash 
@@ -1196,7 +1196,7 @@ ABC: Path 19 --     315 : 1    1 sky130_fd_sc_hd__inv_2    A =   3.75  Df =4139.
 ABC: Start-point = pi3 (\b [1]).  End-point = po14 (\CMP48.cout).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =   16/   16  lat =    0  nd =   284  edge =    841  area =2687.50  delay =23.00  lev = 23
-ABC: + write_blif /tmp/yosys-abc-oITMem/output.blif 
+ABC: + write_blif /tmp/yosys-abc-7cYMxV/output.blif 
 
 22.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        5
@@ -1320,6 +1320,6 @@ Found and reported 16 problems.
 Dumping module `\dvsd_8216m3'.
 
 Warnings: 16 unique messages, 16 total
-End of script. Logfile hash: 857c70229c, CPU: user 2.17s system 0.06s, MEM: 45.28 MB peak
+End of script. Logfile hash: 6576d14837, CPU: user 2.16s system 0.06s, MEM: 45.32 MB peak
 Yosys 0.9+4052 (git sha1 d061b0e, gcc 8.3.1 -fPIC -Os)
-Time spent: 48% 2x abc (2 sec), 13% 4x stat (0 sec), ...
+Time spent: 47% 2x abc (1 sec), 13% 4x stat (0 sec), ...

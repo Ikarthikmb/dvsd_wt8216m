@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 16871 19015
+string GDS_FILE /openLANE_flow/designs/dvsd_8216m3/runs/final_run/results/magic/dvsd_8216m3.gds
+string GDS_END 1074408
+string GDS_START 200902
+<< end >>

@@ -1,22 +1,22 @@
 OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/merged_unpadded.lef
 [WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
 The LEF parser will ignore this statement.
-To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef at line 68238.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/merged_unpadded.lef at line 68238.
 
 [INFO ODB-0223]     Created 13 technology layers
 [INFO ODB-0224]     Created 25 technology vias
 [INFO ODB-0225]     Created 441 library cells
-[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef
-[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/placement/7-replace.def
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/placement/7-replace.def
 [INFO ODB-0128] Design: dvsd_8216m3
 [INFO ODB-0130]     Created 34 pins.
 [INFO ODB-0131]     Created 406 components and 2609 component-terminals.
 [INFO ODB-0132]     Created 2 special nets and 1484 connections.
 [INFO ODB-0133]     Created 300 nets and 1125 connections.
-[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/placement/7-replace.def
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/dvsd_8216m3/runs/final_run/tmp/placement/7-replace.def
 create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
 set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
 set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
