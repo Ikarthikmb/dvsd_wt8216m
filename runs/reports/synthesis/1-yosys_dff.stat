@@ -1,23 +1,23 @@
 
 21. Printing statistics.
 
-=== dvsd_8216m9 ===
+=== dvsd_8216m3 ===
 
-   Number of wires:                341
-   Number of wire bits:            370
-   Number of public wires:           3
-   Number of public wire bits:      32
+   Number of wires:                327
+   Number of wire bits:            356
+   Number of public wires:          19
+   Number of public wire bits:      48
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                354
-     $_ANDNOT_                      97
-     $_AND_                         55
-     $_NAND_                        25
-     $_NOR_                         12
-     $_NOT_                          7
-     $_ORNOT_                       10
-     $_OR_                          37
-     $_XNOR_                        25
-     $_XOR_                         86
+   Number of cells:                324
+     $_ANDNOT_                      78
+     $_AND_                         54
+     $_NAND_                        22
+     $_NOR_                         35
+     $_NOT_                          5
+     $_ORNOT_                        4
+     $_OR_                          22
+     $_XNOR_                        26
+     $_XOR_                         78
 

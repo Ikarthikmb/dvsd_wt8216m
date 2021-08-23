@@ -1,94 +1,95 @@
 OpenROAD 1 4d4d7205fd0292dbf3fae55fad9109b3f0bd5786
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/merged_unpadded.lef
+[INFO ODB-0222] Reading LEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef
 [WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
 The LEF parser will ignore this statement.
-To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/merged_unpadded.lef at line 68238.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef at line 68238.
 
 [INFO ODB-0223]     Created 13 technology layers
 [INFO ODB-0224]     Created 25 technology vias
 [INFO ODB-0225]     Created 441 library cells
-[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/merged_unpadded.lef
-[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/6-pdn.def
-[INFO ODB-0128] Design: dvsd_8216m9
+[INFO ODB-0226] Finished LEF file:  /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/6-pdn.def
+[INFO ODB-0128] Design: dvsd_8216m3
 [INFO ODB-0130]     Created 34 pins.
-[INFO ODB-0131]     Created 457 components and 2915 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 1678 connections.
-[INFO ODB-0133]     Created 342 nets and 1237 connections.
-[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/6-pdn.def
+[INFO ODB-0131]     Created 406 components and 2609 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1484 connections.
+[INFO ODB-0133]     Created 300 nets and 1125 connections.
+[INFO ODB-0134] Finished DEF file: /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/6-pdn.def
 [INFO GPL-0002] DBU: 1000
 [INFO GPL-0003] SiteSize: 460 2720
 [INFO GPL-0004] CoreAreaLxLy: 5520 10880
-[INFO GPL-0005] CoreAreaUxUy: 82340 87040
-[INFO GPL-0006] NumInstances: 457
-[INFO GPL-0007] NumPlaceInstances: 326
-[INFO GPL-0008] NumFixedInstances: 131
+[INFO GPL-0005] CoreAreaUxUy: 78660 81600
+[INFO GPL-0006] NumInstances: 406
+[INFO GPL-0007] NumPlaceInstances: 284
+[INFO GPL-0008] NumFixedInstances: 122
 [INFO GPL-0009] NumDummyInstances: 0
-[INFO GPL-0010] NumNets: 342
-[INFO GPL-0011] NumPins: 1269
+[INFO GPL-0010] NumNets: 300
+[INFO GPL-0011] NumPins: 1157
 [INFO GPL-0012] DieAreaLxLy: 0 0
-[INFO GPL-0013] DieAreaUxUy: 87920 98640
+[INFO GPL-0013] DieAreaUxUy: 84355 95075
 [INFO GPL-0014] CoreAreaLxLy: 5520 10880
-[INFO GPL-0015] CoreAreaUxUy: 82340 87040
-[INFO GPL-0016] CoreArea: 5850611200
-[INFO GPL-0017] NonPlaceInstsArea: 304041600
-[INFO GPL-0018] PlaceInstsArea: 2955334400
-[INFO GPL-0019] Util(%): 53.28
-[INFO GPL-0020] StdInstsArea: 2955334400
+[INFO GPL-0015] CoreAreaUxUy: 78660 81600
+[INFO GPL-0016] CoreArea: 5172460800
+[INFO GPL-0017] NonPlaceInstsArea: 282771200
+[INFO GPL-0018] PlaceInstsArea: 2687577600
+[INFO GPL-0019] Util(%): 54.96
+[INFO GPL-0020] StdInstsArea: 2687577600
 [INFO GPL-0021] MacroInstsArea: 0
-[InitialPlace]  Iter: 1 CG Error: 0.00000006 HPWL: 5395940
-[InitialPlace]  Iter: 2 CG Error: 0.00000005 HPWL: 4917419
-[InitialPlace]  Iter: 3 CG Error: 0.00000010 HPWL: 4927110
-[InitialPlace]  Iter: 4 CG Error: 0.00000010 HPWL: 4936621
-[InitialPlace]  Iter: 5 CG Error: 0.00000011 HPWL: 4937086
-[INFO GPL-0031] FillerInit: NumGCells: 336
-[INFO GPL-0032] FillerInit: NumGNets: 342
-[INFO GPL-0033] FillerInit: NumGPins: 1269
+[InitialPlace]  Iter: 1 CG Error: 0.00000009 HPWL: 4980900
+[InitialPlace]  Iter: 2 CG Error: 0.00000006 HPWL: 4516290
+[InitialPlace]  Iter: 3 CG Error: 0.00000010 HPWL: 4531235
+[InitialPlace]  Iter: 4 CG Error: 0.00000011 HPWL: 4546847
+[InitialPlace]  Iter: 5 CG Error: 0.00000011 HPWL: 4547563
+[INFO GPL-0031] FillerInit: NumGCells: 284
+[INFO GPL-0032] FillerInit: NumGNets: 300
+[INFO GPL-0033] FillerInit: NumGPins: 1157
 [INFO GPL-0023] TargetDensity: 0.55
-[INFO GPL-0024] AveragePlaceInstArea: 9065442
-[INFO GPL-0025] IdealBinArea: 16482621
-[INFO GPL-0026] IdealBinCnt: 354
-[INFO GPL-0027] TotalBinArea: 5850611200
+[INFO GPL-0024] AveragePlaceInstArea: 9463301
+[INFO GPL-0025] IdealBinArea: 17206002
+[INFO GPL-0026] IdealBinCnt: 300
+[INFO GPL-0027] TotalBinArea: 5172460800
 [INFO GPL-0028] BinCnt: 16 16
-[INFO GPL-0029] BinSize: 4802 4760
+[INFO GPL-0029] BinSize: 4572 4420
 [INFO GPL-0030] NumBins: 256
-[NesterovSolve] Iter: 1 overflow: 0.875485 HPWL: 3575702
-[NesterovSolve] Iter: 10 overflow: 0.794019 HPWL: 4270908
-[NesterovSolve] Iter: 20 overflow: 0.787723 HPWL: 4295210
-[NesterovSolve] Iter: 30 overflow: 0.789789 HPWL: 4288069
-[NesterovSolve] Iter: 40 overflow: 0.790011 HPWL: 4284056
-[NesterovSolve] Iter: 50 overflow: 0.78925 HPWL: 4288251
-[NesterovSolve] Iter: 60 overflow: 0.789559 HPWL: 4287791
-[NesterovSolve] Iter: 70 overflow: 0.789666 HPWL: 4287302
-[NesterovSolve] Iter: 80 overflow: 0.789299 HPWL: 4289417
-[NesterovSolve] Iter: 90 overflow: 0.789004 HPWL: 4290986
-[NesterovSolve] Iter: 100 overflow: 0.788603 HPWL: 4293488
-[NesterovSolve] Iter: 110 overflow: 0.787794 HPWL: 4298477
-[NesterovSolve] Iter: 120 overflow: 0.786568 HPWL: 4305906
+[NesterovSolve] Iter: 1 overflow: 0.866261 HPWL: 3195114
 [INFO GPL-0100] worst slack 1e+30
 [WARNING GPL-0102] No slacks found. Timing-driven mode disabled.
-[NesterovSolve] Iter: 130 overflow: 0.784487 HPWL: 4317954
-[NesterovSolve] Iter: 140 overflow: 0.781067 HPWL: 4336979
-[NesterovSolve] Iter: 150 overflow: 0.775166 HPWL: 4367301
-[NesterovSolve] Iter: 160 overflow: 0.768608 HPWL: 4414261
-[NesterovSolve] Iter: 170 overflow: 0.761089 HPWL: 4485910
-[NesterovSolve] Iter: 180 overflow: 0.745632 HPWL: 4581202
-[NesterovSolve] Iter: 190 overflow: 0.721752 HPWL: 4688992
-[NesterovSolve] Iter: 200 overflow: 0.700422 HPWL: 4827920
-[NesterovSolve] Iter: 210 overflow: 0.663314 HPWL: 4970668
-[NesterovSolve] Iter: 220 overflow: 0.626331 HPWL: 5085857
-[NesterovSolve] Snapshot saved at iter = 226
-[NesterovSolve] Iter: 230 overflow: 0.58232 HPWL: 5209517
-[NesterovSolve] Iter: 240 overflow: 0.532095 HPWL: 5264482
-[NesterovSolve] Iter: 250 overflow: 0.487087 HPWL: 5387069
-[NesterovSolve] Iter: 260 overflow: 0.438237 HPWL: 5451364
-[NesterovSolve] Iter: 270 overflow: 0.399112 HPWL: 5605382
-[NesterovSolve] Iter: 280 overflow: 0.354039 HPWL: 5768913
-[NesterovSolve] Iter: 290 overflow: 0.314374 HPWL: 5889219
-[NesterovSolve] Iter: 300 overflow: 0.279127 HPWL: 5999232
-[NesterovSolve] Iter: 310 overflow: 0.243982 HPWL: 6119657
-[NesterovSolve] Iter: 320 overflow: 0.215515 HPWL: 6208506
+[NesterovSolve] Iter: 10 overflow: 0.747284 HPWL: 3904138
+[NesterovSolve] Iter: 20 overflow: 0.744748 HPWL: 3914665
+[NesterovSolve] Iter: 30 overflow: 0.746998 HPWL: 3901275
+[NesterovSolve] Iter: 40 overflow: 0.746766 HPWL: 3901439
+[NesterovSolve] Iter: 50 overflow: 0.746309 HPWL: 3903971
+[NesterovSolve] Iter: 60 overflow: 0.746627 HPWL: 3902184
+[NesterovSolve] Iter: 70 overflow: 0.746554 HPWL: 3902683
+[NesterovSolve] Iter: 80 overflow: 0.746339 HPWL: 3903916
+[NesterovSolve] Iter: 90 overflow: 0.746281 HPWL: 3904194
+[NesterovSolve] Iter: 100 overflow: 0.746007 HPWL: 3906019
+[NesterovSolve] Iter: 110 overflow: 0.745616 HPWL: 3908566
+[NesterovSolve] Iter: 120 overflow: 0.745091 HPWL: 3912534
+[NesterovSolve] Iter: 130 overflow: 0.744167 HPWL: 3919175
+[NesterovSolve] Iter: 140 overflow: 0.742736 HPWL: 3929860
+[NesterovSolve] Iter: 150 overflow: 0.739981 HPWL: 3946963
+[NesterovSolve] Iter: 160 overflow: 0.735287 HPWL: 3972927
+[NesterovSolve] Iter: 170 overflow: 0.726189 HPWL: 4010386
+[NesterovSolve] Iter: 180 overflow: 0.713506 HPWL: 4062967
+[NesterovSolve] Iter: 190 overflow: 0.702332 HPWL: 4138193
+[NesterovSolve] Iter: 200 overflow: 0.684361 HPWL: 4244351
+[NesterovSolve] Iter: 210 overflow: 0.66112 HPWL: 4358874
+[NesterovSolve] Iter: 220 overflow: 0.628012 HPWL: 4493394
+[NesterovSolve] Snapshot saved at iter = 227
+[NesterovSolve] Iter: 230 overflow: 0.587131 HPWL: 4587989
+[NesterovSolve] Iter: 240 overflow: 0.535394 HPWL: 4653529
+[NesterovSolve] Iter: 250 overflow: 0.483424 HPWL: 4695294
+[NesterovSolve] Iter: 260 overflow: 0.434813 HPWL: 4778183
+[NesterovSolve] Iter: 270 overflow: 0.38729 HPWL: 4898938
+[NesterovSolve] Iter: 280 overflow: 0.338806 HPWL: 5029131
+[NesterovSolve] Iter: 290 overflow: 0.303151 HPWL: 5143910
+[NesterovSolve] Iter: 300 overflow: 0.259373 HPWL: 5247244
+[NesterovSolve] Iter: 310 overflow: 0.238224 HPWL: 5351238
+[NesterovSolve] Iter: 320 overflow: 0.220495 HPWL: 5432564
+[NesterovSolve] Iter: 330 overflow: 0.199563 HPWL: 5479437
 [INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
 [INFO GRT-0020] Min routing layer: li1
 [INFO GRT-0021] Max routing layer: met5
@@ -107,12 +108,12 @@ To avoid this warning in the future, remove this statement from the LEF file wit
 [INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
 [INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
 [INFO GRT-0003] Macros: 0
-[INFO GRT-0004] Blockages: 11991
+[INFO GRT-0004] Blockages: 10979
 [INFO GRT-0019] Found 0 clock nets.
 [INFO GRT-0001] Minimum degree: 2
 [INFO GRT-0002] Maximum degree: 6
-[INFO GRT-0017] Processing 9454 blockages on layer li1.
-[INFO GRT-0017] Processing 1083 blockages on layer met1.
+[INFO GRT-0017] Processing 8602 blockages on layer li1.
+[INFO GRT-0017] Processing 939 blockages on layer met1.
 [INFO GRT-0017] Processing 5 blockages on layer met4.
 [INFO GRT-0017] Processing 5 blockages on layer met5.
 
@@ -120,53 +121,53 @@ To avoid this warning in the future, remove this statement from the LEF file wit
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
-li1        Vertical         2520          2199          12.74%
-met1       Horizontal       3360          2431          27.65%
-met2       Vertical         2520          2457          2.50%
-met3       Horizontal       1680          1551          7.68%
-met4       Vertical         1008           972          3.57%
-met5       Horizontal        336           297          11.61%
+li1        Vertical         2340          1905          18.59%
+met1       Horizontal       3120          2395          23.24%
+met2       Vertical         2340          2172          7.18%
+met3       Horizontal       1560          1496          4.10%
+met4       Vertical          936           850          9.19%
+met5       Horizontal        312           286          8.33%
 ---------------------------------------------------------------
 
-[INFO GRT-0111] Final number of vias: 552
-[INFO GRT-0112] Final usage 3D: 2537
+[INFO GRT-0111] Final number of vias: 564
+[INFO GRT-0112] Final usage 3D: 2469
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
-li1               2199           404           18.37%             0 /  0 /  0
-met1              2431           424           17.44%             0 /  0 /  0
-met2              2457            31            1.26%             0 /  0 /  0
-met3              1551            22            1.42%             0 /  0 /  0
-met4               972             0            0.00%             0 /  0 /  0
-met5               297             0            0.00%             0 /  0 /  0
+li1               1905           322           16.90%             0 /  0 /  0
+met1              2395           434           18.12%             0 /  0 /  0
+met2              2172            21            0.97%             0 /  0 /  0
+met3              1496             0            0.00%             0 /  0 /  0
+met4               850             0            0.00%             0 /  0 /  0
+met5               286             0            0.00%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total             9907           881            8.89%             0 /  0 /  0
+Total             9104           777            8.53%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 10826 um
+[INFO GRT-0018] Total wirelength: 9742 um
 [INFO GPL-0036] TileLxLy: 0 0
 [INFO GPL-0037] TileSize: 6900 6900
-[INFO GPL-0038] TileCnt: 12 15
+[INFO GPL-0038] TileCnt: 12 14
 [INFO GPL-0039] numRoutingLayers: 6
-[INFO GPL-0040] NumTiles: 180
+[INFO GPL-0040] NumTiles: 168
 [INFO GPL-0063] TotalRouteOverflowH2: 0.0
 [INFO GPL-0064] TotalRouteOverflowV2: 0.0
 [INFO GPL-0065] OverflowTileCnt2: 0
-[INFO GPL-0066] 0.5%RC: 1.0
-[INFO GPL-0067] 1.0%RC: 0.9733333349227905
-[INFO GPL-0068] 2.0%RC: 0.9259259303410848
-[INFO GPL-0069] 5.0%RC: 0.7749999924139543
+[INFO GPL-0066] 0.5%RC: 0.9777777791023254
+[INFO GPL-0067] 1.0%RC: 0.9249999970197678
+[INFO GPL-0068] 2.0%RC: 0.8374999985098839
+[INFO GPL-0069] 5.0%RC: 0.7349999964237213
 [INFO GPL-0070] 0.5rcK: 1.0
 [INFO GPL-0071] 1.0rcK: 1.0
 [INFO GPL-0072] 2.0rcK: 0.0
 [INFO GPL-0073] 5.0rcK: 0.0
-[INFO GPL-0074] FinalRC: 0.9866667
-[NesterovSolve] Iter: 330 overflow: 0.192871 HPWL: 6285234
-[NesterovSolve] Iter: 340 overflow: 0.171708 HPWL: 6345962
-[NesterovSolve] Iter: 350 overflow: 0.150507 HPWL: 6398483
-[NesterovSolve] Iter: 360 overflow: 0.13234 HPWL: 6437341
-[NesterovSolve] Iter: 370 overflow: 0.112062 HPWL: 6477299
-[NesterovSolve] Finished with Overflow: 0.098353
+[INFO GPL-0074] FinalRC: 0.9513889
+[NesterovSolve] Iter: 340 overflow: 0.181729 HPWL: 5526874
+[NesterovSolve] Iter: 350 overflow: 0.163064 HPWL: 5564059
+[NesterovSolve] Iter: 360 overflow: 0.143302 HPWL: 5590596
+[NesterovSolve] Iter: 370 overflow: 0.125261 HPWL: 5624202
+[NesterovSolve] Iter: 380 overflow: 0.110164 HPWL: 5658341
+[NesterovSolve] Finished with Overflow: 0.098611
 create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
 set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
 set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]

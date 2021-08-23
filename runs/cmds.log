@@ -1,167 +1,44 @@
-Fri Aug 20 18:30:16 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/extract_metal_layers.py -t /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/met_layers_list.txt"
+Mon Aug 23 11:12:03 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/extract_metal_layers.py -t /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/met_layers_list.txt"
 
-Fri Aug 20 18:30:19 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__decap_12.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_12.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_8.lef} -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/merged_unpadded.lef |& tee >&@stdout"
+Mon Aug 23 11:12:07 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__decap_12.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_12.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_8.lef} -o /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/merged_unpadded.lef |& tee >&@stdout"
 
-Fri Aug 20 18:30:20 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/trimmed.lib.exclude.list > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/trimmed.lib"
+Mon Aug 23 11:12:07 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/trimmed.lib.exclude.list > /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/trimmed.lib"
 
-Fri Aug 20 18:30:26 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/new_tracks.py -i /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/config.tracks"
+Mon Aug 23 11:12:07 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/new_tracks.py -i /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/config.tracks"
 
-Fri Aug 20 18:30:31 UTC 2021 - Executing "echo {openlane 2021.08.02_05.21.44-10-g71ad1f0} > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/OPENLANE_VERSION"
+Mon Aug 23 11:12:15 UTC 2021 - Executing "echo {openlane 2021.08.02_05.21.44-10-g71ad1f0} > /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/OPENLANE_VERSION"
 
-Fri Aug 20 18:30:31 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+Mon Aug 23 11:29:02 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
 
-Fri Aug 20 18:30:31 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/synthesis/1-yosys.log |& tee >&@stdout"
+Mon Aug 23 11:29:02 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/synthesis/1-yosys.log |& tee >&@stdout"
 
-Fri Aug 20 18:30:39 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
+Mon Aug 23 11:29:08 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m3\/runs\/23-08_11-12\/results\/synthesis\/dvsd_8216m3.synthesis.v/} /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/config.tcl"
 
-Fri Aug 20 18:30:39 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
+Mon Aug 23 11:29:08 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/config.tcl"
 
-Fri Aug 20 18:30:39 UTC 2021 - Executing "sed -i /defparam/d /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis.v"
+Mon Aug 23 11:29:08 UTC 2021 - Executing "sed -i /defparam/d /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/synthesis/dvsd_8216m3.synthesis.v"
 
-Fri Aug 20 18:30:39 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/synthesis/2-opensta"
+Mon Aug 23 11:29:08 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/synthesis/2-opensta"
 
-Fri Aug 20 18:30:45 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/floorplan/3-verilog2def.openroad.log"
+Mon Aug 23 11:36:56 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/floorplan/3-verilog2def.openroad.log"
 
-Fri Aug 20 18:30:51 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_ioplacer.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/floorplan/4-ioPlacer.log"
+Mon Aug 23 11:37:02 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_ioplacer.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/floorplan/4-ioPlacer.log"
 
-Fri Aug 20 18:30:55 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/floorplan/5-tapcell.log"
+Mon Aug 23 11:37:06 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/floorplan/5-tapcell.log"
 
-Fri Aug 20 18:30:59 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_pdn.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/floorplan/6-pdn.log"
+Mon Aug 23 11:37:11 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_pdn.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/floorplan/6-pdn.log"
 
-Fri Aug 20 18:31:03 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/placement/7-replace.log"
+Mon Aug 23 12:13:27 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/placement/7-replace.log"
 
-Fri Aug 20 18:31:10 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_resizer.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/placement/7-resizer.log"
+Mon Aug 23 12:13:42 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_resizer.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/placement/7-resizer.log"
 
-Fri Aug 20 18:31:15 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/8-write_verilog.log"
+Mon Aug 23 12:13:48 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/8-write_verilog.log"
 
-Fri Aug 20 18:31:19 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_optimized.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
+Mon Aug 23 12:13:51 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m3\/runs\/23-08_11-12\/results\/synthesis\/dvsd_8216m3.synthesis_optimized.v/} /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/config.tcl"
 
-Fri Aug 20 18:31:19 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
+Mon Aug 23 12:13:51 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m3\/runs\/23-08_11-12\/results\/synthesis\/dvsd_8216m3.synthesis.v/} /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/config.tcl"
 
-Fri Aug 20 18:31:19 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/synthesis/9-opensta_post_resizer"
+Mon Aug 23 12:13:51 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/synthesis/9-opensta_post_resizer"
 
-Fri Aug 20 18:31:26 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/placement/10-opendp.log"
-
-Fri Aug 20 18:31:31 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/cts.lib.exclude.list > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/cts.lib"
-
-Fri Aug 20 18:31:31 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_cts.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/cts/11-cts.log"
-
-Fri Aug 20 18:33:35 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/12-write_verilog.log"
-
-Fri Aug 20 18:33:39 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_cts.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:33:39 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_optimized.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:33:39 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_resizer_timing.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/placement/12-resizer_timing.log"
-
-Fri Aug 20 18:33:44 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/13-write_verilog.log"
-
-Fri Aug 20 18:33:47 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_optimized.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:33:47 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_cts.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:33:47 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/synthesis/14-opensta_post_resizer_timing"
-
-Fri Aug 20 18:33:53 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_groute.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/routing/15-fastroute.log"
-
-Fri Aug 20 18:33:59 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_fill.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/routing/16-addspacers.log"
-
-Fri Aug 20 18:34:03 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/17-write_verilog.log"
-
-Fri Aug 20 18:34:06 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_preroute.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:34:06 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_optimized.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:34:06 UTC 2021 - Executing "envsubst < /openLANE_flow/scripts/tritonRoute.param > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/18-tritonRoute.param"
-
-Fri Aug 20 18:34:06 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_droute.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/routing/18-tritonRoute.log"
-
-Fri Aug 20 18:35:07 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/tr2klayout.py -i /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/routing/18-tritonRoute.drc -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/routing/18-tritonRoute.klayout.xml --design-name dvsd_8216m9"
-
-Fri Aug 20 18:35:11 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/spef_extractor/main.py -l /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/merged_unpadded.lef -d /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/routing/17-dvsd_8216m9.def -mw L -ec 1 |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/routing/19-spef_extraction.log"
-
-Fri Aug 20 18:35:17 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/synthesis/20-opensta_spef"
-
-Fri Aug 20 18:35:24 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/write_powered_def.py -d /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/routing/17-dvsd_8216m9.def -l /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/merged.lef --power-port VPWR --ground-port VGND --powered-netlist {} -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/21-dvsd_8216m9.powered.def |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/lvs/21-write_powered_verilog.log"
-
-Fri Aug 20 18:35:28 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/22-write_verilog.log"
-
-Fri Aug 20 18:35:32 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/lvs\/dvsd_8216m9.lvs.powered.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:35:32 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/dvsd_8216m9\/runs\/20-08_18-30\/results\/synthesis\/dvsd_8216m9.synthesis_preroute.v/} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/config.tcl"
-
-Fri Aug 20 18:35:32 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/mag_gds.tcl </dev/null |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/magic/23-magic.log"
-
-Fri Aug 20 18:35:34 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/gds_pointers.tcl </dev/null |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/magic/24-magic.mag.gds_ptrs.log"
-
-Fri Aug 20 18:35:35 UTC 2021 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/magic/magic_gds_ptrs.mag"
-
-Fri Aug 20 18:35:35 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/lef.tcl </dev/null |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/magic/25-magic.lef.log"
-
-Fri Aug 20 18:35:36 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/maglef.tcl </dev/null |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/magic/26-magic.maglef.log"
-
-Fri Aug 20 18:35:37 UTC 2021 - Executing "bash /openLANE_flow/scripts/klayout/def2gds.sh /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/routing/17-dvsd_8216m9.def dvsd_8216m9 /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/klayout/dvsd_8216m9.gds {/home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_12.gds /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fakediode_2.gds /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__decap_12.gds /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_8.gds /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_4.gds } |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/klayout/27-klayout.log"
-
-Fri Aug 20 18:35:43 UTC 2021 - Executing "bash /openLANE_flow/scripts/klayout/xor.sh /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/magic/dvsd_8216m9.gds /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/klayout/dvsd_8216m9.gds dvsd_8216m9 /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/klayout/dvsd_8216m9.xor.gds |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/klayout/28-klayout.xor.log"
-
-Fri Aug 20 18:35:50 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/parse_klayout_xor_log.py -l /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/klayout/28-klayout.xor.log -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/klayout/28-klayout.xor.rpt"
-
-Fri Aug 20 18:35:54 UTC 2021 - Executing "bash /openLANE_flow/scripts/klayout/xor.sh /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/magic/dvsd_8216m9.gds /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/klayout/dvsd_8216m9.gds dvsd_8216m9 /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/klayout/dvsd_8216m9.xor.xml |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/klayout/29-klayout.xor.log"
-
-Fri Aug 20 18:36:03 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/parse_klayout_xor_log.py -l /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/klayout/29-klayout.xor.log -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/klayout/29-klayout.xor.rpt"
-
-Fri Aug 20 18:36:07 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/magic_spice.tcl </dev/null |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/magic/30-magic_spice.log"
-
-Fri Aug 20 18:36:09 UTC 2021 - Executing "netgen -batch source /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/lvs/setup_file.lef.lvs |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/lvs/31-lvs.lef.log"
-
-Fri Aug 20 18:36:09 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/drc.tcl </dev/null |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/magic/32-magic.drc.log"
-
-Fri Aug 20 18:36:13 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/magic_drc_to_tcl.py -i /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.drc -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.drc.tcl"
-
-Fri Aug 20 18:36:17 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/magic_drc_to_tr_drc.py -i /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.drc -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.tr.drc"
-
-Fri Aug 20 18:36:21 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/tr2klayout.py -i /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.tr.drc -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.drc.klayout.xml --design-name dvsd_8216m9"
-
-Fri Aug 20 18:36:25 UTC 2021 - Executing "openroad -python /openLANE_flow/scripts/magic_drc_to_rdb.py --magic_drc_in /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.drc --rdb_out /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic/32-magic.drc.rdb"
-
-Fri Aug 20 18:36:29 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_antenna_check.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/routing/33-or_antenna.log"
-
-Fri Aug 20 18:36:34 UTC 2021 - Executing "mv -f /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/routing/antenna.rpt /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/routing/34-antenna.rpt"
-
-Fri Aug 20 18:36:34 UTC 2021 - Executing "awk { BEGIN {  # Print power and standard_input definitions
-    print "VPWR power 1.8";
-    print "VGND power 0.0";
-    print "#define std_input min@VGND max@VPWR";
-}
-$1 == "input" {  # Print input nets
-    gsub(/;/, "");
-    if ( $2 == "VPWR" || $2 == "VGND" ) {  # ignore power nets
-        next;
-    }
-    if ( NF == 3 ) {  # print buses as net[range]
-        $2 = $3 $2;
-    }
-    print $2, "input std_input";
-}} /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/lvs/dvsd_8216m9.lvs.powered.v > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/cvc/dvsd_8216m9.power"
-
-Fri Aug 20 18:36:34 UTC 2021 - Executing "awk { /Black-box entry subcircuit/ {  # remove black-box defintions
-    while ( $1 != ".ends" ) {
-        getline;
-    }
-    getline;
-}
-/^\*/ {  # remove comments
-    next;
-}
-/^.ENDS .*/ {  # remove name from ends lines
-    print $1;
-    next;
-}
- {
-    print $0;
-}} /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/magic/dvsd_8216m9.lef.spice > /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/cvc/dvsd_8216m9.cdl"
-
-Fri Aug 20 18:36:34 UTC 2021 - Executing "cvc /openLANE_flow/scripts/cvc/sky130A/cvcrc.sky130A |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/logs/cvc/35-cvc_screen.log"
-
-Fri Aug 20 18:36:35 UTC 2021 - Executing "openroad -python /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/designs/dvsd_8216m9 -dn dvsd_8216m9 -t 20-08_18-30 -o /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/final_summary_report.csv -m /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/manufacturability_report.rpt -rs /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/runtime_summary_report.rpt -r /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30"
+Mon Aug 23 12:13:57 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/logs/placement/10-opendp.log"
 

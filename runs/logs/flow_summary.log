@@ -1,4 +1,4 @@
-[INFO]: Current run directory is /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30
+[INFO]: Current run directory is /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12
 [INFO]: Preparing LEF Files
 [INFO]: Extracting the number of available metal layers from /home/drako/applications/vsdflow/work/tools/openlane_working_dir/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef
 [INFO]: The number of available metal layers is 6
@@ -10,156 +10,50 @@
 [INFO]: Preparation complete
 [INFO]: Running Synthesis...
 [INFO]: current step index: 1
-[INFO]: Changing netlist from 0 to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis.v
+[INFO]: Changing netlist from 0 to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/synthesis/dvsd_8216m3.synthesis.v
 [INFO]: Running Static Timing Analysis...
 [INFO]: current step index: 2
 [INFO]: Synthesis was successful
 [INFO]: Running Floorplanning...
 [INFO]: Running Initial Floorplanning...
 [INFO]: current step index: 3
-[INFO]: Core area width: 76.82000000000001
-[INFO]: Core area height: 76.16000000000001
+[INFO]: Core area width: 73.14
+[INFO]: Core area height: 70.72
 [WARNING]: Current core area is too small for a power grid
 [WARNING]: !!! THE POWER GRID WILL BE MINIMIZED. !!!
-[INFO]: Final Vertical PDN Offset: 12.803333333333335
-[INFO]: Final Horizontal PDN Offset: 12.693333333333335
-[INFO]: Final Vertical PDN Pitch: 25.60666666666667
-[INFO]: Final Horizontal PDN Pitch: 25.38666666666667
-[INFO]: Changing layout from 0 to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/3-verilog2def_openroad.def
+[INFO]: Final Vertical PDN Offset: 12.19
+[INFO]: Final Horizontal PDN Offset: 11.786666666666667
+[INFO]: Final Vertical PDN Pitch: 24.38
+[INFO]: Final Horizontal PDN Pitch: 23.573333333333334
+[INFO]: Changing layout from 0 to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/3-verilog2def_openroad.def
 [INFO]: Running IO Placement...
 [INFO]: current step index: 4
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/3-verilog2def_openroad.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/4-ioPlacer.def
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/3-verilog2def_openroad.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/4-ioPlacer.def
 [INFO]: Running Tap/Decap Insertion...
 [INFO]: current step index: 5
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/4-ioPlacer.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/floorplan/dvsd_8216m9.floorplan.def
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/4-ioPlacer.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/floorplan/dvsd_8216m3.floorplan.def
 [INFO]: Power planning the following nets
 [INFO]: Power: VPWR
 [INFO]: Ground: VGND
 [INFO]: Generating PDN...
 [INFO]: current step index: 6
 [INFO]: PDN generation was successful.
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/floorplan/dvsd_8216m9.floorplan.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/6-pdn.def
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/floorplan/dvsd_8216m3.floorplan.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/6-pdn.def
 [INFO]: Running Placement...
 [INFO]: Running Global Placement...
 [INFO]: current step index: 7
 [INFO]: Global placement was successful
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/floorplan/6-pdn.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/placement/7-replace.def
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/floorplan/6-pdn.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/placement/7-replace.def
 [INFO]: Running Resizer Design Optimizations...
 [INFO]: Generating Exclude List...
 [INFO]: Creating ::env(DONT_USE_CELLS)...
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/placement/7-replace.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/placement/7-resizer.def
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/placement/7-replace.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/placement/7-resizer.def
 [INFO]: Writing Verilog...
 [INFO]: current step index: 8
-[INFO]: Changing netlist from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis.v to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_optimized.v
+[INFO]: Changing netlist from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/synthesis/dvsd_8216m3.synthesis.v to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/synthesis/dvsd_8216m3.synthesis_optimized.v
 [INFO]: Running Static Timing Analysis...
 [INFO]: current step index: 9
 [INFO]: Running Detailed Placement...
 [INFO]: current step index: 10
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/placement/7-resizer.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/placement/dvsd_8216m9.placement.def
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/placement/dvsd_8216m9.placement.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/placement/dvsd_8216m9.placement.def
-[INFO]: Running TritonCTS...
-[INFO]: current step index: 11
-[INFO]: Trimming Liberty...
-[INFO]: Generating Exclude List...
-[INFO]: Clock Tree Synthesis was successful
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/placement/dvsd_8216m9.placement.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/cts/dvsd_8216m9.cts.def
-[INFO]: Writing Verilog...
-[INFO]: current step index: 12
-[INFO]: Changing netlist from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_optimized.v to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_cts.v
-[INFO]: Running Resizer Timing Optimizations...
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/cts/dvsd_8216m9.cts.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/placement/12-resizer_timing.def
-[INFO]: Writing Verilog...
-[INFO]: current step index: 13
-[INFO]: Changing netlist from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_cts.v to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_optimized.v
-[INFO]: Running Static Timing Analysis...
-[INFO]: current step index: 14
-[INFO]: Routing...
-[INFO]: Running Global Routing...
-[INFO]: current step index: 15
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/placement/12-resizer_timing.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.def
-[INFO]: Changing layout from 0 to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.guide
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.def
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.guide to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.guide
-[INFO]: Current Def is /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.def
-[INFO]: Current Guide is /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.guide
-[INFO]: Running Fill Insertion...
-[INFO]: current step index: 16
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/15-fastroute.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/16-addspacers.def
-[INFO]: Writing Verilog...
-[INFO]: current step index: 17
-[INFO]: Changing netlist from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_optimized.v to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_preroute.v
-[INFO]: Running Detailed Routing...
-[INFO]: current step index: 18
-[INFO]: No DRC violations after detailed routing.
-[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/tmp/routing/16-addspacers.def to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/routing/17-dvsd_8216m9.def
-[INFO]: Running SPEF Extraction...
-[INFO]: current step index: 19
-[INFO]: Running Static Timing Analysis...
-[INFO]: current step index: 20
-[INFO]: Calculating Runtime From the Start...
-[INFO]: Routing completed for dvsd_8216m9/20-08_18-30 in 0h5m8s
-[INFO]: Writing Powered Verilog...
-[INFO]: current step index: 21
-[INFO]: Writing Verilog...
-[INFO]: current step index: 22
-[INFO]: Yosys won't attempt to rewrite verilog, and the OpenROAD output will be used as is.
-[INFO]: Changing netlist from /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/synthesis/dvsd_8216m9.synthesis_preroute.v to /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/lvs/dvsd_8216m9.lvs.powered.v
-[INFO]: Running Magic to generate various views...
-[INFO]: Streaming out GDS II...
-[INFO]: current step index: 23
-[INFO]: current step index: 24
-[INFO]: current step index: 25
-[INFO]: current step index: 26
-[INFO]: Running Klayout to re-generate GDS-II...
-[INFO]: Streaming out GDS II...
-[INFO]: current step index: 27
-[INFO]: Back-up GDS-II streamed out.
-[INFO]: Running XOR on the layouts using Klayout...
-[INFO]: current step index: 28
-[INFO]: current step index: 29
-[INFO]: Klayout XOR Complete
-[INFO]: Running Magic Spice Export from LEF...
-[INFO]: current step index: 30
-[INFO]: No Illegal overlaps detected during extraction.
-[INFO]: Running LEF LVS...
-[INFO]: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/magic/dvsd_8216m9.spice against /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/lvs/dvsd_8216m9.lvs.powered.v
-[INFO]: current step index: 31
-[INFO]: No LVS mismatches.
-[INFO]: Running Magic DRC...
-[INFO]: current step index: 32
-[INFO]: Converting Magic DRC Violations to Magic Readable Format...
-[INFO]: Converting Magic DRC Violations to Klayout XML Database...
-[INFO]: Converting DRC Violations to RDB Format...
-[INFO]: Converted DRC Violations to RDB Format
-[INFO]: No DRC violations after GDS streaming out.
-[INFO]: Running Antenna Checks...
-[INFO]: Running OpenROAD Antenna Rule Checker...
-[INFO]: current step index: 33
-[INFO]: current step index: 34
-[INFO]: Running CVC
-[INFO]: current step index: 35
-[INFO]: Calculating Runtime From the Start...
-[INFO]: Flow completed for dvsd_8216m9/20-08_18-30 in 0h6m20s
-[INFO]: Generating Final Summary Report...
-[INFO]: Design Name: dvsd_8216m9
-Run Directory: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30
-----------------------------------------
-
-Magic DRC Summary:
-Source: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/magic//32-magic.drc
-Total Magic DRC violations is 0
-----------------------------------------
-
-LVS Summary:
-Source: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/results/lvs/dvsd_8216m9.lvs_parsed.lef.log
-LVS reports no net, device, pin, or property mismatches.
-Total errors = 0
-----------------------------------------
-
-Antenna Summary:
-Source: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/routing//34-antenna.rpt
-Number of pins violated: 0
-Number of nets violated: 0
-[INFO]: check full report here: /openLANE_flow/designs/dvsd_8216m9/runs/20-08_18-30/reports/final_summary_report.csv
-[INFO]: Saving Runtime Environment
-[SUCCESS]: Flow Completed Without Fatal Errors.
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/tmp/placement/7-resizer.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/placement/dvsd_8216m3.placement.def
+[INFO]: Changing layout from /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/placement/dvsd_8216m3.placement.def to /openLANE_flow/designs/dvsd_8216m3/runs/23-08_11-12/results/placement/dvsd_8216m3.placement.def
