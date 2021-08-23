@@ -250,6 +250,6 @@ run_placement
 
 **Websites**
 
-* Advanced OpenLANE Workshop: https://gitlab.com/gab13c/openlane-workshop#about-the-project
 * OpenLANE: https://github.com/efabless/openlane
 * Dada multiplier wiki: https://en.wikipedia.org/wiki/Dadda_multiplier
+* Advanced OpenLANE Workshop: https://gitlab.com/gab13c/openlane-workshop#about-the-project
