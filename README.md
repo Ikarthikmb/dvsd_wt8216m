@@ -7,16 +7,15 @@
 
 <!-- code_chunk_output -->
 
-- [RTL to GDS for a Modified 8-bit Dadda Multiplier using 3:2 Compressors with sky130 PDK and OpenLane](#rtl-to-gds-for-a-modified-8-bit-dadda-multiplier-using-32-compressors-with-sky130-pdk-and-openlane)
-  - [Verification](#verification)
-  - [OpenLane Flow](#openlane-flow)
-    - [Preparation](#preparation)
-    - [Synthesis](#synthesis)
-    - [Floor Planning](#floor-planning)
-    - [Placement](#placement)
-    - [Final GDS](#final-gds)
-  - [Acknowledgements:](#acknowledgements)
-  - [References:](#references)
+- [Verification](#verification)
+- [OpenLane Flow](#openlane-flow)
+  - [Preparation](#preparation)
+  - [Synthesis](#synthesis)
+  - [Floor Planning](#floor-planning)
+  - [Placement](#placement)
+  - [Final GDS](#final-gds)
+- [Acknowledgements:](#acknowledgements)
+- [References:](#references)
 
 <!-- /code_chunk_output -->
 
