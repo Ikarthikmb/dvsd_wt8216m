@@ -88,6 +88,54 @@ And it shall be displayed using GTKWave viewer
 
 ## OpenLane Flow
 
+**Openlane Directories:**
+
+```
+runs/
+├── logs
+│   ├── cts
+│   ├── cvc
+│   ├── floorplan
+│   ├── klayout
+│   ├── lvs
+│   ├── magic
+│   ├── placement
+│   ├── routing
+│   └── synthesis
+├── reports
+│   ├── cts
+│   ├── cvc
+│   ├── floorplan
+│   ├── klayout
+│   ├── lvs
+│   ├── magic
+│   ├── placement
+│   ├── routing
+│   └── synthesis
+├── results
+│   ├── cts
+│   ├── cvc
+│   ├── floorplan
+│   ├── klayout
+│   ├── lvs
+│   ├── magic
+│   ├── placement
+│   ├── routing
+│   └── synthesis
+└── tmp
+    ├── cts
+    ├── cvc
+    ├── floorplan
+    ├── klayout
+    ├── lvs
+    ├── magic
+    ├── placement
+    ├── routing
+    └── synthesis
+
+```
+
+
 ![preparation of the design](fig/02-openlane_flow_block.png)
 
 OpenLANE flow consists of several stages. By default, all flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively as shown here.
