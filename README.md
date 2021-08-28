@@ -283,6 +283,46 @@ run_placement
 ![GDS file with klayout viewer](fig/14-final_gds.png)
 ![GDS file with klayout viewer](fig/14-final_gds_zoomed.png)
 
+## Runtime Summary Report
+
+```
+0-prep 0h0m8s725ms
+1-yosys 0h0m5s420ms
+2-opensta 0h0m6s131ms
+3-verilog2def_openroad 0h0m4s572ms
+4-ioPlacer 0h0m4s336ms
+5-tapcell 0h0m4s137ms
+6-pdn 0h0m4s864ms
+7-replace 0h0m15s254ms
+7-resizer 0h0m5s510ms
+8-write_verilog 0h0m4s79ms
+9-opensta_post_resizer 0h0m6s4ms
+10-opendp 0h0m4s41ms
+11-cts 0h2m4s557ms
+12-write_verilog 0h0m4s60ms
+12-resizer_timing 0h0m7s200ms
+13-write_verilog 0h0m3s940ms
+14-opensta_post_resizer_timing 0h0m6s177ms
+15-fastroute 0h0m8s967ms
+16-addspacers 0h0m7s70ms
+17-write_verilog 0h0m6s905ms
+18-tritonRoute 0h1m12s440ms
+19-spef_extraction 0h0m7s482ms
+20-opensta_spef 0h0m7s809ms
+22-write_verilog 0h0m4s418ms
+26-magic_gen 0h0m5s642ms
+27-klayout 0h0m10s888ms
+29-klayout_xor 0h0m30s307ms
+30-magic_ext_spice 0h0m1s546ms
+31-lvs 0h0m0s931ms
+32-magic_drc 0h0m19s66ms
+34-or_antenna 0h0m4s151ms
+35-cvc 0h0m0s565ms
+```
+
+## Post Layout Simulation:
+
+![Waveform](fig/15-postlayout.png)
 
 ## Acknowledgements:
 
@@ -292,11 +332,13 @@ run_placement
 
 **Research Papers**
 
-- [ ] Jorge Tonfat, Ricardo Reis, South Symposium on Microelectronics, Low Power 3-2 and 4-2 Adder Compressors Implemented Using ASTRAN.
-- [ ] Lavanya. M, Ranjan K. Senapati, JVR Ravindra, International Journal of Engineering Research and Technology, Low-Power Near-Explicit 5:2 Compressor for Superior Performance Multipliers
+- [1] Gary W. Bewick, "Fast Multiplication: Algorithms and Implementation".
+- [2] Jorge Tonfat, Ricardo Reis, South Symposium on Microelectronics, "Low Power 3-2 and 4-2 Adder Compressors Implemented Using ASTRAN".
+- [3] Lavanya. M, Ranjan K. Senapati, JVR Ravindra, International Journal of Engineering Research and Technology, "Low-Power Near-Explicit 5:2 Compressor for Superior Performance Multipliers".
 
 **Websites**
 
 * OpenLANE: https://github.com/efabless/openlane
 * Dada multiplier wiki: https://en.wikipedia.org/wiki/Dadda_multiplier
 * Advanced OpenLANE Workshop: https://gitlab.com/gab13c/openlane-workshop#about-the-project
+* RV12 RISC-V 32/64-bit CPU: 
