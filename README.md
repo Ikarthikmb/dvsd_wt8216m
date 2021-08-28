@@ -30,7 +30,16 @@ speed and improve the efficiency of the design. The multiplier design uses two 8
 a 16-bit output.
 
 
-**Directory Structure:**
+## Introduction
+
+### Application
+
+![Application](fig/01-application_riscv12.png)
+
+* Multipliers are very common in a high end cpu's, and play a major role in the computation. 
+* There are couple of applications, one which I would like to mention is inside a RISC V12 processor.
+
+### Directory Structure:
 
 ```sh
 ├──fig
@@ -52,7 +61,11 @@ a 16-bit output.
 
 ```
 
-## Verification
+### Pin Configuration:
+
+![pin configuration](fig/01-application_pin_configuration.png)
+
+### Modules:
 
 Module | Location | Description
 --- |:---:| ---
@@ -63,6 +76,8 @@ and1b | rtl  | Performs logical AND operation
 dvsd_8216m3_tb | tb  | Testbench for dvsd_8216m3 module
 dvsd_8216m9 | rtl  | System mutiplication for two 8-bit numbers 
 dvsd_8216m9_tb | tb  | Testbech for dvsd_8216m9
+
+## Code Verification
 
 To verify the `dvsd_8216m3` code, go inside the `sim` directory and issue the below **make** command. It will also open the gtkwave to view the output waveforms.
 
