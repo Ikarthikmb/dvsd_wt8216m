@@ -7,7 +7,12 @@
 
 <!-- code_chunk_output -->
 
-- [Verification](#verification)
+- [Introduction](#introduction)
+	- [Application](#application)
+	- [Directory Structure](#directory-structure)
+	- [Pin Configuration](#pin-configuration)
+	- [Modules](#modules)
+- [Code Verification](#code-verification)
 - [OpenLane Flow](#openlane-flow)
   - [Preparation](#preparation)
   - [Synthesis](#synthesis)
@@ -63,7 +68,7 @@ a 16-bit output.
 
 ### Pin Configuration:
 
-![pin configuration](fig/01-application_pin_configuration.png)
+![pin configuration](fig/01-application_pin_config.png)
 
 ### Modules:
 
