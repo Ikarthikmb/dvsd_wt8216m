@@ -7,15 +7,18 @@
 
 <!-- code_chunk_output -->
 
-- [Verification](#verification)
-- [OpenLane Flow](#openlane-flow)
-  - [Preparation](#preparation)
-  - [Synthesis](#synthesis)
-  - [Floor Planning](#floor-planning)
-  - [Placement](#placement)
-  - [Final GDS](#final-gds)
-- [Acknowledgements:](#acknowledgements)
-- [References:](#references)
+- [RTL to GDS for a Modified 8-bit Dadda Multiplier using 3:2 Compressors with sky130 PDK and OpenLane](#rtl-to-gds-for-a-modified-8-bit-dadda-multiplier-using-32-compressors-with-sky130-pdk-and-openlane)
+  - [Verification](#verification)
+  - [OpenLane Flow](#openlane-flow)
+    - [Preparation](#preparation)
+    - [Synthesis](#synthesis)
+    - [Floor Planning](#floor-planning)
+    - [Placement](#placement)
+  - [Post Layout Simulation:](#post-layout-simulation)
+    - [Final GDS](#final-gds)
+  - [Runtime Summary Report](#runtime-summary-report)
+  - [Acknowledgements:](#acknowledgements)
+  - [References:](#references)
 
 <!-- /code_chunk_output -->
 
@@ -278,12 +281,22 @@ run_placement
 
 ![single cell from Placement def file](fig/12-placement_def_box.png)
 
+
+## Post Layout Simulation:
+
+
+![Waveform](fig/15-postlayout_cmd.png)
+
+![Waveform](fig/15-postlayout.png)
+
 ### Final GDS
 
 ![GDS file with klayout viewer](fig/14-final_gds.png)
 ![GDS file with klayout viewer](fig/14-final_gds_zoomed.png)
 
 ## Runtime Summary Report
+
+Time consumed for each process in generation of gds file.
 
 ```
 0-prep 0h0m8s725ms
@@ -319,10 +332,6 @@ run_placement
 34-or_antenna 0h0m4s151ms
 35-cvc 0h0m0s565ms
 ```
-
-## Post Layout Simulation:
-
-![Waveform](fig/15-postlayout.png)
 
 ## Acknowledgements:
 
