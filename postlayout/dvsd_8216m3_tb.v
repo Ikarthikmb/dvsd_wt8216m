@@ -5,7 +5,7 @@
 // ==============================================================
 
 `timescale 1ns/1ps
-`include "../rtl/dvsd_8216m3.v"
+`include "dvsd_8216m3.v"
 
 module dvsd_8216m3_tb();
 
