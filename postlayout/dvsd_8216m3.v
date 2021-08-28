@@ -1,3 +1,6 @@
+`include "primitives.v"
+`include "sky130_fd_sc_hd.v"
+
 module dvsd_8216m3 (VGND,
     VPWR,
     a,
