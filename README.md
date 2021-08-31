@@ -41,8 +41,7 @@ a 16-bit output.
 
 ![Application](fig/01-application_riscv12.png)
 
-* Multipliers are very common in a high end cpu's, and play a major role in the computation. 
-* There are couple of applications, one which I would like to mention is inside a RISC V12 processor.
+Multipliers are very common in a high end cpu's, and play a major role in the computation. There are couple of applications, one which I would like to mention is inside a RISC V12 processor.
 
 ### Directory Structure:
 
@@ -351,6 +350,32 @@ Time consumed for each process in generation of gds file.
 35-cvc 0h0m0s565ms
 ```
 
+## Conclusion:
+
+```
+Number of cells:                324
+  $_ANDNOT_                      78
+  $_AND_                         54
+  $_NAND_                        22
+  $_NOR_                         35
+  $_NOT_                          5
+  $_ORNOT_                        4
+  $_OR_                          22
+  $_XNOR_                        26
+  $_XOR_                         78
+```
+
+Optimised values from yosys:
+
+```
+Total Gates = 284
+Cap =  9.1 ff
+Area =     2687.58
+Delay =  4139.03 ps 
+```
+
+The modified fast 8-bit Dadda multiplier using the 3:2 compressors has a propagation delay of 4.139 ns when compared to 8-bit Wallace tree which has a delay of 7.168 ns[4]. 
+
 ## Acknowledgements:
 
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
@@ -359,9 +384,13 @@ Time consumed for each process in generation of gds file.
 
 **Research Papers**
 
-- [1] Gary W. Bewick, "Fast Multiplication: Algorithms and Implementation".
-- [2] Jorge Tonfat, Ricardo Reis, South Symposium on Microelectronics, "Low Power 3-2 and 4-2 Adder Compressors Implemented Using ASTRAN".
-- [3] Lavanya. M, Ranjan K. Senapati, JVR Ravindra, International Journal of Engineering Research and Technology, "Low-Power Near-Explicit 5:2 Compressor for Superior Performance Multipliers".
+[1] Gary W. Bewick, "Fast Multiplication: Algorithms and Implementation".
+
+[2] Jorge Tonfat, Ricardo Reis, South Symposium on Microelectronics, "Low Power 3-2 and 4-2 Adder Compressors Implemented Using ASTRAN".
+
+[3] Lavanya. M, Ranjan K. Senapati, JVR Ravindra, International Journal of Engineering Research and Technology, "Low-Power Near-Explicit 5:2 Compressor for Superior Performance Multipliers".
+
+[4] Himanshu Bansal, K. G Sharma, Tripthi Sharma, Innnovative Systems Design and Engineering, "Wallace Tree Multiplier Designs: A Performance Comparision Review".
 
 **Websites**
 
