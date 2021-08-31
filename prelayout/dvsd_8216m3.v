@@ -34,10 +34,6 @@ module dvsd_8216m3(
   input [7:0] a,
   input [7:0] b,
   output [15:0] m
-  // input   a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7],
-  // input   b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7],
-  // output  m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7],
-  // output  m[8], m[9], m[10], m[11], m[12], m[13], m[14], m[15]
 );
 
   wire w00,w10,w20,w30,w40,w50,w60,w70;
@@ -125,6 +121,7 @@ module dvsd_8216m3(
   and1b AND62(a[6], b[7], w67);
   and1b AND63(a[7], b[7], w77);
   
+
   //==============================================================
   // Stage 1  
   //==============================================================
@@ -221,6 +218,28 @@ module dvsd_8216m3(
   compressor3to2 CMP47(rc10,rs11,mc12,ms13,mc13);
   compressor3to2 CMP48(rc11,w77,mc13,ms14,mc14);
   
+
+  // Test  "rc1",rs2,mc3,ms4,mc4
+  // "ts0,w12",w03,rs1,rc1
+  // w30,w21,ts0,tc0
+
+  // assign m[0]   = rc1;
+  // assign m[1]   = rs2;
+  // assign m[2]   = mc3;
+  // assign m[3]   = mc4;
+  // assign m[4]   = ms4;
+  // assign m[5]   = ts0;
+  // assign m[6]   = w12;
+  // assign m[7]   = w03;
+  // assign m[8]   = rs1;
+  // assign m[9]   = rc1;
+  // assign m[10]  = ms10;
+  // assign m[11]  = ms11;
+  // assign m[12]  = ms12;
+  // assign m[13]  = ms13;
+  // assign m[14]  = ms14;
+  // assign m[15]  = mc14;
+
   // ==============================================================
   // Outputs
   // ==============================================================
@@ -298,3 +317,44 @@ module and1b(
   assign y = a1 & a2;
   
 endmodule
+
+
+
+  // initial begin
+  //   a = 8'b1111_0000;
+  //   b = 8'b0011_1000;
+
+  //   $display(a,b,"\n");
+
+  //   #2;
+  //   $display(
+  //     "\t\t        ",w70,w60,w50,w40,w30,w20,w10,w00,"\n",
+  //     "\t\t       ",w71,w61,w51,w41,w31,w21,w11,w01,"\n",
+  //     "\t\t      ",w72,w62,w52,w42,w32,w22,w12,w02,"\n",
+  //     "\t\t     ",w73,w63,w53,w43,w33,w23,w13,w03,"\n",
+  //     "\t\t    ",w74,w64,w54,w44,w34,w24,w14,w04,"\n",
+  //     "\t\t   ",w75,w65,w55,w45,w35,w25,w15,w05,"\n",
+  //     "\t\t  ",w76,w66,w56,w46,w36,w26,w16,w06,"\n",
+  //     "\t\t ",w77,w67,w57,w47,w37,w27,w17,w07,"\n"
+  //   );
+
+  //   $display("\t\t%b\n",m);
+
+  //   // #2;
+  //   $display(
+  //     "\t\t ",us1,us2,us3,us4,us5,us6,"\n",
+  //     "\t\t ",uc1,uc2,uc3,uc4,uc5,uc6,"\n"
+  //   );
+
+  //   $display(
+  //     vs0,vs1,vs2,vs3,vs4,vs5,vs6,vs7,vs8,vs9,vs10,vs11,vs12,vs13,"\n",
+  //     vc0,vc1,vc2,vc3,vc4,vc5,vc6,vc7,vc8,vc9,vc10,vc11,vc12,vc13,"\n"
+  //   );
+
+  //   $display(
+  //     w00,ms1,ms2,ms3,"\t",ms4,ms5,ms6,ms7,"\t",ms8,ms9,ms10,ms11,"\t",ms12,ms13,ms14,mc14
+  //   );
+
+
+  //   #10 $finish;
+  // end
