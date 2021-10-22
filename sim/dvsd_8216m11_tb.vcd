@@ -1,0 +1,44 @@
+$date
+	Tue Aug 24 02:30:17 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module dvsd_8216m11_tb $end
+$var wire 16 ! m [15:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$var reg 1 $ clock $end
+$var reg 16 % p [15:0] $end
+$var integer 32 & i [31:0] $end
+$scope module DUT $end
+$var wire 8 ' a [7:0] $end
+$var wire 8 ( b [7:0] $end
+$var wire 1 $ clock $end
+$var reg 16 ) dock [15:0] $end
+$var reg 3 * i [2:0] $end
+$var reg 16 + m [15:0] $end
+$var reg 16 , ship [15:0] $end
+$upscope $end
+$upscope $end
+
+$enddefinitions $end
+#0
+$dumpvars
+bx ,
+bx +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+b0 #
+b0 "
+b0 !
+$end#2000
+

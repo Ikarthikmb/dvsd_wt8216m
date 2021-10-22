@@ -34,6 +34,12 @@ module dvsd_8216m3_tb();
 		@(posedge clock)
 		{a,b} = 16'b1111_1111_1111_1111;
 		p = a * b;
+
+		@(posedg
+		e clock)
+		a = 8'd150;
+		b = 8'd150;
+		p = a * b;
 	end
 
 	initial begin

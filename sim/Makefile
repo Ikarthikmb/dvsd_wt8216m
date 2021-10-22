@@ -17,9 +17,10 @@ help:
 	@ echo ======================================================
 
 test1:
-	time iverilog $(tbm3)
+	time iverilog $(rtlm3)
+	# time iverilog $(tbm3)
 	vvp a.out
-	gtkwave dvsd_8216m3_tb.vcd
+	# gtkwave dvsd_8216m3_tb.vcd
 	
 test2:
 	time iverilog $(tbm9)

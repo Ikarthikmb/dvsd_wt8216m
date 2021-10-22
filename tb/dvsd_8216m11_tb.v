@@ -1,15 +1,13 @@
 // ==============================================================
 // 
-// Testbench for dvsd_8216m3
+// Testbench for dvsd_8216m11
 // 
 // ==============================================================
 
 `timescale 1ns/1ps
-`include "dvsd_8216m3.v"
-`include "primitives.v"
-`include "sky130_fd_sc_hd.v"
+`include "../rtl/dvsd_8216m11.v"
 
-module dvsd_8216m3_tb();
+module dvsd_8216m11_tb();
 
 	reg [7:0] a, b;
 	reg [15:0] p;
@@ -37,7 +35,6 @@ module dvsd_8216m3_tb();
 		{a,b} = 16'b1111_1111_1111_1111;
 		p = a * b;
 
-		@(posedge clock)
 		a = 8'd150;
 		b = 8'd150;
 		p = a * b;
@@ -45,8 +42,8 @@ module dvsd_8216m3_tb();
 
 	initial begin
 		$timeformat(-9,3," ns",9);
-		$dumpfile("dvsd_8216m3_tb.vcd");
-		$dumpvars(0, dvsd_8216m3_tb);
+		$dumpfile("dvsd_8216m11_tb.vcd");
+		$dumpvars(0, dvsd_8216m11_tb);
 
 		$display("Time\t\tA\t\tB\t\tM(Obtained)\t\tP(Required)");
 		$monitor(
@@ -57,9 +54,10 @@ module dvsd_8216m3_tb();
 		#25 $finish;
 	end
 
-	dvsd_8216m3 DUT(
+	dvsd_8216m11 DUT(
 		.a(a),
 		.b(b),
+		.clock(clock),
 		.m(m)
 	);
 endmodule
