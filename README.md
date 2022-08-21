@@ -398,3 +398,6 @@ The modified fast 8-bit Dadda multiplier using the 3:2 compressors has a propaga
 * Dada multiplier wiki: https://en.wikipedia.org/wiki/Dadda_multiplier
 * Advanced OpenLANE Workshop: https://gitlab.com/gab13c/openlane-workshop#about-the-project
 * RV12 RISC-V 32/64-bit CPU: 
+
+**Fileout**
+![File out](notes/fileout.md)
